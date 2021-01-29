@@ -1,0 +1,132 @@
+.backGroundOpacity {
+    background: rgba(255, 255, 255, 1);
+    min-height: 594px;
+     margin: 0px;
+     /*margin-left:15px;*/
+}
+.backGroundOpacity1 {
+    background: rgba(255, 255, 255, 1);
+    min-height: 450px;
+    padding-left:0px;
+    padding-right:0px;
+}
+.bottomlogo {
+ background-color: white; margin: 0px;
+    
+}
+.FormHeaderContainer{
+      padding-bottom: 15px;
+     padding-top: 30px
+}
+.FormHeader {
+    font-size: 20px;
+    color: #0A0A0A;
+    vertical-align: middle;
+    text-align: center;
+    font-family:Calibri;
+    padding-left:20px;
+  font-weight:bold;
+}
+@media (min-width: 1024px) {
+    .FormContainerrow1 {
+        margin-bottom: 20px;
+    }
+}
+ .FormContainerrow {
+        margin-bottom: 20px;
+    }
+.FormContainerrowlabel{
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-left:20px;
+    /*font-family:Calibri;
+    font-size:14px;*/
+}
+.FormContainerrowinput{
+    background-color:transparent;
+}
+.FormContainerrowButton{
+    padding-top:10px;
+    padding-bottom:20px
+}
+.GridHeader {
+            text-align: center !important;
+        }
+.Gridcolumns {
+            padding:0;
+        }
+form {
+        background: #f1eded;
+        width: 60%;
+        top:200px;
+        left: 20%;
+       border-style:solid;
+       border-color: #BBB8B8;
+       border-width: 1px;
+        font-family: lato;
+        position: fixed;
+        color: #333;
+        border-radius: 10px;
+}
+form header {
+            background: rgba(231, 78, 8, 0.97);
+             text-align: center;
+            padding: 12px 20px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 10px 10px 0 0;
+}
+form label {
+            margin-left: 20px;
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            position: relative;
+          }
+          form label span {
+            color: #FF3838;
+            font-size: 2em;
+            position: absolute;
+            left: 2.3em;
+            top: -10px;
+          }
+          form input {
+            display: block;
+            width: 80%;
+            margin-left: 20px;
+            padding: 5px 20px ;
+            padding-left: 35px;
+            font-size: 1.2em;
+            border-radius: 3px;
+            outline: none;
+            border: 1px solid #ccc;
+          }
+          form .help {
+            margin-left: 20px;
+            font-size: 0.8em;
+            color: #777;
+          }
+          form button {
+            position: relative;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            transform: translate(-50%, 0);
+            font-family: inherit;
+            color: white;
+            background: rgba(231, 78, 8, 0.97);
+            outline: none;
+            border: none;
+            padding: 5px 15px;
+            font-style: bold;
+            font-size: 1.2em;
+            font-weight: 400;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+          }
+          form button:hover {
+            background: #ff5252;
+          }
+
+

@@ -1,0 +1,2307 @@
+<html class="gr__bnp_fixmyvisit_com"><style type="text/css" id="night-mode-pro-style">html {background-color: #FFFFFF !important;} body {background-color: #FFFFFF;}</style><link type="text/css" rel="stylesheet" id="night-mode-pro-link"><head>
+   
+
+<!-- Style Sheet -->
+<link href="../themes/default/kiosk_style.css" type="text/css" rel="stylesheet">
+<link href="../themes/default/visitorpass.css" type="text/css" rel="stylesheet">
+<link href="../themes/default/menubar_style.css" type="text/css" rel="stylesheet">
+<link href="../themes/default/style_ltr.css" type="text/css" rel="stylesheet">
+
+<link href="../Controls/themes/tp_orange.css" type="text/css" rel="stylesheet">
+<link href="../Controls/themes/form-field-tooltip.css" type="text/css" rel="stylesheet">
+
+<link rel="shortcut icon" href="../favicon.ico">
+
+</head><body data-gr-c-s-loaded="true"><div id="divMetaHeader">
+
+    <script type="text/javascript">
+        // Create Element.remove() function if not exist
+        if (!('remove' in Element.prototype)) {
+            Element.prototype.remove = function () {
+                if (this.parentNode) {
+                    this.parentNode.removeChild(this);
+                }
+            };
+        }
+        var SITE_SERVER_ROOT_PATH = 'https://bnp.fixmyvisit.com/';
+
+    </script>
+
+    <script type="text/javascript" src="../Controls/src/form-field-tooltip.js"></script>
+    <script type="text/javascript" src="../Controls/src/rounded-corners.js"></script>
+    <script type="text/javascript" src="../Controls/src/tooltip.js"></script>
+    <script type="text/javascript" src="../Controls/src/Terminology.js"></script>
+
+    <!-- Scripts Files -->
+    <script type="text/javascript" src="../inc/scripts/common_scripts.js"></script>
+    <script type="text/javascript" src="../inc/scripts/client_validation.js"></script>
+    <script type="text/javascript" src="../inc/scripts/key_press.js"></script>
+    <script type="text/javascript" src="../inc/scripts/ajax.js"></script>
+    <script type="text/javascript" src="../jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../inc/scripts/imagetooltip.js"></script>
+    <script type="text/javascript" src="../inc/scripts/texttooltipjquery.js"></script>
+    <script type="text/javascript" src="../inc/scripts/texttooltipmain.js"></script>
+
+
+    <!-- Web Service Files -->
+    <script type="text/javascript" src="../inc/ws/ajax.js"></script>
+
+    <!-- Calendar Control Files -->
+    <script type="text/javascript" src="../Controls/utils/cogent.js"></script><script type="text/javascript" src="../Controls/utils/utils.js" id="Cogent.Utils"></script><script type="text/javascript" src="../Controls/utils/zpeventdriven.js" id="Cogent.EventDriven"></script><script type="text/javascript" src="../Controls/utils/transport.js" id="Cogent.Transport"></script><script type="text/javascript" src="../Controls/utils/zpwidget.js" id="Cogent.Widget"></script>
+    <script type="text/javascript" src="../Controls/src/calendar.js"></script><script type="text/javascript" src="https://bnp.fixmyvisit.com/controls/src/calendar-core.js" id="Cogent.Calendar"></script><script type="text/javascript" src="https://bnp.fixmyvisit.com/controls/src/calendar-date-core.js"></script><script type="text/javascript" src="https://bnp.fixmyvisit.com/controls/src/calendar-setup.js"></script>
+    <script type="text/javascript" src="../Controls/src/calendar-en.js"></script>
+    <script type="text/javascript" src="../Controls/src/BlueBird.min.js"></script>
+    <script type="text/javascript" src="../Controls/src/HtmlTable-image.js"></script>
+    <script type="text/javascript" src="../Controls/src/HtmlTable-image1.js"></script>
+    
+    <script type="text/javascript" src="../inc/scripts/jquery.blockUI.js"></script>
+
+    <!-- Hidden fields for Session and DB values for use in javascript validation functions -->
+    <input name="FOASMetaHeader$UserDTFormat" type="hidden" id="FOASMetaHeader_UserDTFormat" value="dd/MM/yyyy HH:mm">
+    <input name="FOASMetaHeader$UserIsAdmin" type="hidden" id="FOASMetaHeader_UserIsAdmin" value="False">
+    <input name="FOASMetaHeader$UserIsSuperAdmin" type="hidden" id="FOASMetaHeader_UserIsSuperAdmin" value="False">
+    <input name="FOASMetaHeader$LocationID" type="hidden" id="FOASMetaHeader_LocationID">
+    <input name="FOASMetaHeader$IsLocationWiseManagement" type="hidden" id="FOASMetaHeader_IsLocationWiseManagement" value="True">
+    <input name="FOASMetaHeader$IsTerminologyEnabled" type="hidden" id="FOASMetaHeader_IsTerminologyEnabled" value="True">
+    <input name="FOASMetaHeader$hdnToolTipControls" type="hidden" id="FOASMetaHeader_hdnToolTipControls">
+    <input name="FOASMetaHeader$hdnToolTipTexts" type="hidden" id="FOASMetaHeader_hdnToolTipTexts">
+    <input name="FOASMetaHeader$hdnLocationCode" type="hidden" id="FOASMetaHeader_hdnLocationCode">
+    <input name="FOASMetaHeader$hdnUserID" type="hidden" id="FOASMetaHeader_hdnUserID" value="Unknown">
+    <input name="FOASMetaHeader$hdnConfirmCheckout" type="hidden" id="FOASMetaHeader_hdnConfirmCheckout">
+    <input name="FOASMetaHeader$hdnSuppressActiveXErrors" type="hidden" id="FOASMetaHeader_hdnSuppressActiveXErrors" value="TRUE">
+    <input name="FOASMetaHeader$hdnUploadFile" type="hidden" id="FOASMetaHeader_hdnUploadFile">
+    <input name="FOASMetaHeader$hdnTransporterName" type="hidden" id="FOASMetaHeader_hdnTransporterName">
+    <input name="FOASMetaHeader$hdninvoiceNO1" type="hidden" id="FOASMetaHeader_hdninvoiceNO1">
+    <input name="FOASMetaHeader$hdninvoiceNO2" type="hidden" id="FOASMetaHeader_hdninvoiceNO2">
+    <input name="FOASMetaHeader$hdninvoiceNO3" type="hidden" id="FOASMetaHeader_hdninvoiceNO3">
+    <input name="FOASMetaHeader$hdnEmpID" type="hidden" id="FOASMetaHeader_hdnEmpID">
+    <input name="FOASMetaHeader$hdnVisitorID" type="hidden" id="FOASMetaHeader_hdnVisitorID">
+    <input name="FOASMetaHeader$hdnPOIsApproved" type="hidden" id="FOASMetaHeader_hdnPOIsApproved">
+    <input name="FOASMetaHeader$hdnInvoiceType" type="hidden" id="FOASMetaHeader_hdnInvoiceType">
+    <input name="FOASMetaHeader$hdnCascading" type="hidden" id="FOASMetaHeader_hdnCascading">
+    <input name="FOASMetaHeader$hdnothertxt" type="hidden" id="FOASMetaHeader_hdnothertxt">
+    <input name="FOASMetaHeader$hdnOther_value" type="hidden" id="FOASMetaHeader_hdnOther_value">
+    <input name="FOASMetaHeader$hdncontrolist" type="hidden" id="FOASMetaHeader_hdncontrolist" value="">
+    <input name="FOASMetaHeader$room_label" type="hidden" id="FOASMetaHeader_room_label">
+    <script type="text/javascript">
+
+        var EMPTY_STRING = '';
+        var COL_DELIMITER_STR = '|^*%^|';
+        var ROW_DELIMITER_STR = '|=-@=|';
+        var GENERIC_MESSAGE_REQUIRED_FIELD = '\nThis is a required field!';
+
+        //web service URL
+        var sWebServiceURL = '../inc/ws/wsFOAS.asmx/';
+        //alerts Configuration - ActiveX Error Alert
+        var suppressActiveXErrorAlerts = false;
+        var configuredValue = document.getElementById('FOASMetaHeader_hdnSuppressActiveXErrors').value.toLowerCase();
+
+        if (configuredValue == "true" || configuredValue == "yes" || configuredValue == "1")
+            suppressActiveXErrorAlerts = true;
+
+    </script>
+
+    <script id="setgetcookies" type="text/javascript">
+        var MultiControl = 0;
+        function Set_Cookie(name, valueStyle, expiredays) {
+            var myCookie = 'false';
+            if (myCookie == 'true') {
+                myCookie.HttpOnly = true;
+                myCookie.Secure = true;
+                myCookie.Path = "/";
+            }
+            else {
+                if (typeof expiredays == "undefined" || expiredays == "" || expiredays == "null") {
+                    var expires = 1000;
+                    var today = new Date();
+                    today.setTime(today.getTime());
+
+                    if (expires) {
+                        expires = expires * 1000 * 60 * 60 * 24;
+                    }
+                    var expires_date = new Date(today.getTime() + (expires));
+                    document.cookie = name + "=" + escape(valueStyle) + ((expires) ? ";expires=" + expires_date.toGMTString() : "");
+                }
+                else {
+                    var exdate = new Date();
+                    exdate.setDate(exdate.getDate() + expiredays);
+                    document.cookie = name + "=" + escape(valueStyle) +
+                    ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());
+                }
+            }
+        }
+
+        function Get_Cookie(name) {
+            try {
+                var start = document.cookie.indexOf(name + "=");
+                var len = start + name.length + 1;
+                if ((!start) && (name != document.cookie.substring(0, name.length))) {
+                    return null;
+                }
+                if (start == -1)
+                    return null;
+                var end = document.cookie.indexOf(";", len);
+                if (end == -1)
+                    end = document.cookie.length;
+                return unescape(document.cookie.substring(len, end));
+            }
+            catch (err) {
+                alert(err);
+            }
+        }
+        function UrlExists(url) {
+            try {
+                var http = new XMLHttpRequest();
+                http.open('HEAD', url, false);
+                http.send();
+                return http.status != 404;
+            }
+            catch (err) {
+
+            }
+        }
+        function UrlExistsValue(urlToFile) {
+            return InvokeAjaxMethodSync("isImageExist", "url=" + urlToFile);
+        }
+        function OnBlurMobileNoValidate(controlId) {
+            var EmailOrMobileNoMandatory = 'False';
+            if ('false' == "true") {
+                return true;
+            }
+            else {
+                var MobileNo = document.getElementById(controlId).value;
+                var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+                if (MobileNo != "") {
+                    if (MobileNo.match(phoneno)) {
+                        if (EmailOrMobileNoMandatory.toLowerCase() == "true" && (document.getElementById('ctlVisitorRegister_tblMain__HDS_REQ_FIELDS_LIST'))) {
+                            var strValue = document.getElementById('ctlVisitorRegister_tblMain__HDS_REQ_FIELDS_LIST').value;
+                            strValue = strValue.replace(",ctlVisitorRegister_Email_ID", "");
+                            document.getElementById('ctlVisitorRegister_tblMain__HDS_REQ_FIELDS_LIST').value = strValue;
+                        }
+                        return true;
+                    }
+                    else {
+                        alert('Not a valid Mobile Number');
+                        document.getElementById(controlId).value = '';
+                        document.getElementById(controlId).focus();
+                        return false;
+                    }
+                }
+            }
+        }
+        function OnBlurInternationalMobileNoValidate(controlId) {
+            var minlength = '10';
+        var maxlength = '15';
+        var EmailOrMobileNoMandatory = 'False';
+
+        if (document.getElementById(controlId)) {
+            var MobileNo = document.getElementById(controlId).value;
+            if (MobileNo != "") {
+
+                if (MobileNo.length >= minlength && MobileNo.length <= maxlength) {
+
+                    if (EmailOrMobileNoMandatory.toLowerCase() == "true" && (document.getElementById('ctlVisitorRegister_tblMain__HDS_REQ_FIELDS_LIST'))) {
+                        var strValue = document.getElementById('ctlVisitorRegister_tblMain__HDS_REQ_FIELDS_LIST').value;
+                        strValue = strValue.replace(",ctlVisitorRegister_Email_ID", "");
+                        document.getElementById('ctlVisitorRegister_tblMain__HDS_REQ_FIELDS_LIST').value = strValue;
+                    }
+                    return true;
+                }
+                else {
+                    alert('Invalid Mobile No Length!');
+                     document.getElementById(controlId).value = '';
+                     document.getElementById(controlId).focus();
+
+                     return false;
+                 }
+             }
+
+         }
+
+
+     }
+     function OnChangeMobileNoPrefixValidate(controlId) {
+         if (document.getElementById(controlId)) {
+             var location_id = document.getElementById('FOASMetaHeader_LocationID').value;
+             var mobilenoperfix = document.getElementById(controlId).value.replace("+", "");
+             var ResponseText = InvokeAjaxMethodSync("Checkmobileprefix", "Mobilenoperfix=" + mobilenoperfix);
+
+             if (ResponseText == '') {
+                 alert('Sms facility not available for this Country Code');
+             document.getElementById(controlId).focus();
+
+             return false;
+         }
+     }
+
+
+
+ }
+
+ function CallCheckedInVehicles(ServiceName, ServiceType, MethodType, OutputType, FieldsMap, InputQuery, UserControl, FieldValueParamter, sDefaultValue) {
+     try {
+         var SubRegisterID = sDefaultValue;
+         var winContacts = '';
+         if (winContacts)
+             winContacts.focus();
+         else
+             winContacts = window.open('../../PopUpVehicleDetails.aspx?callfrom=materialregister&UserControl=' + UserControl + '&FieldsMap=' + FieldsMap + '&SubRegisterID=' + SubRegisterID, 'Pop', 'height=435' + sPopupWindowFeatures);
+     }
+     catch (e) {
+         winContacts = window.open('../../PopUpVehicleDetails.aspx?callfrom=materialregister&UserControl=' + UserControl + '&FieldsMap=' + FieldsMap + '&SubRegisterID=' + SubRegisterID, 'Pop', 'height=435' + sPopupWindowFeatures);
+     }
+     return;
+ }
+
+ function checkBoxChanged(chkField, dataField, dataIdField) {
+
+     var ControlRef = document.getElementById(chkField);
+     var CheckBoxListArray = ControlRef.getElementsByTagName('input');
+     var spanArray = ControlRef.getElementsByTagName('span');
+     var MultiCheckId = '';
+     var txtValue = '';
+
+     document.getElementById(dataField).value = "";
+     if (document.getElementById(dataIdField)) {
+         document.getElementById(dataIdField).value = "";
+     }
+
+     for (var i = 0; i < CheckBoxListArray.length; i++) {
+
+         if (CheckBoxListArray[i].checked == true) {
+
+             txtValue += spanArray[i].innerText + ";";
+             MultiCheckId += spanArray[i].getAttributeNode("alt").value + ";";
+
+         }
+     }
+     document.getElementById(dataField).value = txtValue;
+     if (document.getElementById(dataIdField)) {
+         document.getElementById(dataIdField).value = MultiCheckId;
+     }
+ }
+
+ function FillVehiclesDetails(Data, sUserControl, VehicleDetailsFill) {
+
+     document.getElementById('ctlDetailButtons_btnSave').disabled = false;
+
+     var ListOfValues = new Array();
+
+     var ListOfData = new Array();
+     var Input = new Array();
+     ListOfData = Data.split('|');
+     ListOfValues = VehicleDetailsFill.split(';');
+
+     for (var i = 0; i < ListOfValues.length - 1; i++) {
+
+         splitContolValues = ListOfValues[i].split('|');
+         controlID = splitContolValues[1];
+
+
+         if (document.getElementById(controlID)) {
+             var valueIndex = splitContolValues[0];
+             var sdata = ListOfData[valueIndex];
+             var TransporterName = ListOfData[8];
+             if (document.getElementById('FOASMetaHeader_hdnTransporterName').value != '') {
+                 //if (document.getElementById('FOASMetaHeader_hdnTransporterName').value != TransporterName) {
+                 //showError('ERR_SYSTEM_TRANSPORTER_NAME_NOT_MATCHING');
+                    //document.getElementById('ctlDetailButtons_btnSave').disabled = true;
+                    //return false;
+                    //}
+                }
+                document.getElementById(controlID).value = sdata;
+            }
+        }
+        return false;
+    }
+    function FillERP(ServiceName, ServiceType, MethodType, OutputType, FieldsMap, InputQuery, UserControl, FieldValueParamter, ValidationInput) {
+        //DATA FILLING PART//
+        var splitContolValues = new String();
+        var fieldInput = new String();
+        var filedList = new String();
+        var controlID = new String();
+        var ListOfValues = new Array();
+
+
+        ListOfValues = FieldValueParamter.split(';');
+
+        for (var i = 0; i < ListOfValues.length - 1; i++) {
+
+            splitContolValues = ListOfValues[i].split('|');
+
+            controlID = splitContolValues[1];
+
+            if (document.getElementById(controlID)) {
+                if (document.getElementById(controlID).value == '') {
+                    document.getElementById(controlID).focus();
+                    showError('ERR_SYSTEM_MATERIAL_ENTER_VALUE');
+                       return false;
+                   } else {
+
+                       fieldInput += " '" + document.getElementById(controlID).value + "' ";
+                       if (i < (ListOfValues.length - 2))
+                           fieldInput += ",";
+
+                   }
+               }
+           }
+
+           if (filedList != '' && fieldInput == '') {
+               showError('ERR_MATERIAL_ERP_FIELD_VALIDATION');
+                    return false;
+                } else {
+                    InputQuery += fieldInput;
+                    fieldInput = '';
+
+                    var ReturnValue = InvokeAjaxMethodSync("GetValidation", "fields=" + filedList + "&values=" + fieldInput + "&query=" + InputQuery);
+
+                    if (ReturnValue != '' && FieldsMap != '') {
+
+                        var ListArrValueList = new String();
+                        var FieldMapValueList = new String();
+
+                        var FieldMapListArr = new Array();
+                        FieldMapListArr = FieldsMap.split(';');
+                        var ListArr = new Array();
+                        ListArr = ReturnValue.split('|');
+
+
+                        for (var i = 0; i < ListArr.length - 1; i++) {
+
+                            var txtUOM = "MaterialDetails_UOM".concat((MultiControl + 1).toString());
+                            if (document.getElementById(txtUOM)) {
+                                document.getElementById(txtUOM).value = '361';
+                            }
+
+                            ListArrValueList = ListArr[i].split('^');
+                            for (var j = 0; j < FieldMapListArr.length - 1; j++) {
+
+                                FieldMapValueList = FieldMapListArr[j].split('|');
+                                var rowIndex = FieldMapValueList[0];
+
+                                if (document.getElementById(FieldMapValueList[1])) {
+                                    document.getElementById(FieldMapValueList[1]).value = ListArrValueList[j].toString().trim();
+                                    if (FieldMapValueList[1].toString() == 'ctlVisitorRegister_txt_CONTACT_ID') {
+                                        if ('false' == 'false')
+                                            document.getElementById('ctlVisitorRegister_CONTACT_ID_I').value = ListArrValueList[j].toString().trim();
+
+                                    }
+                                    if (FieldMapValueList[1].toString() == 'ctlVisitorRegister_txt_COMPANY_ID') {
+                                        if ('false' == 'false')
+                                            document.getElementById('ctlVisitorRegister_COMPANY_ID_I').value = ListArrValueList[j].toString().trim();//gridLookupCompany.SetValue(ListArrValueList[j].toString().trim());
+
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+                    else {
+                        showError('Enter Valid No');
+                    }
+                }
+
+            }
+            function ClearDetails(ServiceName, ServiceType, MethodType, OutputType, FieldsMap, InputQuery, UserControl, FieldValueParamter, ValidationInput) {
+                var splitContolValues = new String();
+                var SRegID = new String();
+                if (document.getElementById('ctlGPRequest_Subreg_id'))
+                    SRegID = document.getElementById('ctlGPRequest_Subreg_id').value;
+                var fieldInput = new String();
+                var filedList = new String();
+                var controlID = new String();
+                var ListOfValues = new Array();
+                var FieldMapValueList = new String();
+                var FieldMapArr = new Array();
+                var FieldMapListArr = new Array();
+                ListOfValues = FieldValueParamter.split(';');
+                for (var i = 0; i < ListOfValues.length - 1; i++) {
+                    splitContolValues = ListOfValues[i].split('|');
+                    controlID = splitContolValues[1];
+                    if (document.getElementById(controlID)) {
+                        fieldInput += " '" + document.getElementById(controlID).value + "' ";
+                        if (i < (ListOfValues.length - 2))
+                            fieldInput += ",";
+                    }
+                }
+                if (filedList != '' && fieldInput == '') {
+                    showError('ERR_MATERIAL_ERP_FIELD_VALIDATION');
+                 return false;
+             } else {
+                 InputQuery += fieldInput;
+                 fieldInput = '';
+                 var ReturnValue = InvokeAjaxMethodSync("GetValidation", "fields=" + filedList + "&values=" + fieldInput + "&query=" + InputQuery);
+                 if (ReturnValue == '' && FieldsMap != '') {
+                     FieldMapListArr = FieldsMap.split(';');
+                     var ListArr = new Array();
+                     ListArr = ReturnValue.split('|');
+                     try {
+                         if (ReturnValue == '') {
+                             if ((SRegID == '23' || SRegID == '13' || SRegID == '32' || SRegID == '41' || SRegID == '54' || SRegID == '64' || SRegID == '74' || SRegID == '84')
+                               && document.getElementById('ctlGPRequest_UDF2').options[document.getElementById('ctlGPRequest_UDF2').selectedIndex].text == 'Multiple') {
+                                 ResetMaterialDetails(controlID);
+                             }
+                             else {
+                                 MultiControl = 0;
+                                 ClearMaterialDetailsList();
+                             }
+                         }
+                     } catch (Error) {
+                         //ClearMaterialDetailsList();
+                         //MultiControl = 0;
+                     }
+                 }
+                 if ((SRegID == '23' || SRegID == '13' || SRegID == '32' || SRegID == '41' || SRegID == '54' || SRegID == '64' || SRegID == '74' || SRegID == '84')
+                              && document.getElementById('ctlGPRequest_UDF2').options[document.getElementById('ctlGPRequest_UDF2').selectedIndex].text == 'Multiple') {
+                     ResetMaterialDetails(controlID);
+                     FieldMapArr = FieldsMap.split(';');
+                     for (var j = 0; j < FieldMapArr.length - 1; j++) {
+
+                         FieldMapValueList = FieldMapArr[j].split('|');
+                         var rowIndex = FieldMapValueList[0];
+
+                         if (document.getElementById(FieldMapValueList[1])) {
+                             document.getElementById(FieldMapValueList[1]).value = '';
+                         }
+                     }
+                 }
+                 for (var j = 0; j < FieldMapListArr.length - 1; j++) {
+                     FieldMapValueList = FieldMapListArr[j].split('|');
+                     var rowIndex = FieldMapValueList[0];
+                     if (document.getElementById(FieldMapValueList[1])) {
+                         document.getElementById(FieldMapValueList[1]).value = '';
+                     }
+                 }
+             }
+         }
+         var invType = '';
+         function CallERP(ServiceName, ServiceType, MethodType, OutputType, FieldsMap, InputQuery, UserControl, FieldValueParamter, ValidationInput) {
+             var PO_ISAPPRVED = '';
+
+             if (ServiceType.toLowerCase() == "true") {
+                 return false;
+             }
+             else if (ServiceType.toLowerCase() == "false") {
+
+                 //DUPLICATE VALIDATION PART//
+                 if (ServiceName != "" && ValidationInput != "") {
+
+                     var splitContolValuess = new String();
+                     var fieldInputs = new String();
+                     var filedLists = new String();
+                     var controlIDs = new String();
+                     var ListOfValuess = new Array();
+
+                     ListOfValuess = ValidationInput.split(';');
+
+                     for (var i = 0; i < ListOfValuess.length - 1; i++) {
+
+                         splitContolValuess = ListOfValuess[i].split('|');
+
+                         controlIDs = splitContolValuess[1];
+
+                         if (document.getElementById(controlIDs)) {
+                             if (document.getElementById(controlIDs).value == '') {
+                                 document.getElementById(controlIDs).focus();
+                                 showError('ERR_SYSTEM_MATERIAL_ENTER_VALUE');
+                                    return false;
+                                } else {
+                                    fieldInputs += document.getElementById(controlIDs).value + "|";
+                                    filedLists += splitContolValuess[0] + "|";
+                                }
+                            }
+                        }
+
+                        if (filedList != '' && fieldInput == '') {
+                            showError('ERR_MATERIAL_ERP_FIELD_VALIDATION');
+                    return false;
+                } else {
+                    var ReturnValuess = InvokeAjaxMethodSync("GetValidation", "fields=" + filedLists + "&values=" + fieldInputs + "&query=" + ServiceName);
+                }
+
+                if (ReturnValuess != '') {
+                    showError('ERR_SYSTEM_MATERIAL_INVOICE_EXISIT');
+                    return false;
+                }
+
+            }
+                    //DATA FILLING PART//
+            var splitContolValues = new String();
+            var fieldInput = new String();
+            var filedList = new String();
+            var controlID = new String();
+            var ListOfValues = new Array();
+
+
+            ListOfValues = FieldValueParamter.split(';');
+
+            for (var i = 0; i < ListOfValues.length - 1; i++) {
+
+                splitContolValues = ListOfValues[i].split('|');
+
+                controlID = splitContolValues[1];
+
+                if (document.getElementById(controlID)) {
+                    if (document.getElementById(controlID).value == '') {
+                        document.getElementById(controlID).focus();
+                        showError('ERR_SYSTEM_MATERIAL_ENTER_VALUE');
+                        return false;
+                    } else {
+
+                        fieldInput += " '" + document.getElementById(controlID).value + "' ";
+                        if (i < (ListOfValues.length - 2))
+                            fieldInput += ",";
+                        //                            fieldInput += document.getElementById(controlID).value + "|";
+                        //                            filedList += splitContolValues[0] + "|";
+                    }
+                }
+            }
+
+            if (filedList != '' && fieldInput == '') {
+                showError('ERR_MATERIAL_ERP_FIELD_VALIDATION');
+                    return false;
+                } else {
+                    InputQuery += fieldInput;
+                    fieldInput = '';
+
+                    var ReturnValue = InvokeAjaxMethodSync("GetValidation", "fields=" + filedList + "&values=" + fieldInput + "&query=" + InputQuery);
+
+                    var SRegID = new String();
+                    if (document.getElementById('ctlGPRequest_Subreg_id'))
+                        SRegID = document.getElementById('ctlGPRequest_Subreg_id').value;
+
+                    if (ReturnValue != '' && FieldsMap != '') {
+
+                        var ListArrValueList = new String();
+                        var FieldMapValueList = new String();
+
+                        var FieldMapListArr = new Array();
+                        FieldMapListArr = FieldsMap.split(';');
+                        var ListArr = new Array();
+                        ListArr = ReturnValue.split('|');
+
+                        //if (document.getElementById('ctlGPRequest_UDF2')) {
+                        //    try {
+                        //        if (document.getElementById('ctlGPRequest_UDF2').options[document.getElementById('ctlGPRequest_UDF2').selectedIndex].text == 'Single') {
+                        //            MultiControl = 0;
+                        //            ClearMaterialDetailsList();
+                        //        }
+                        //    } catch (Error) {
+                        //        ClearMaterialDetailsList();
+                        //        MultiControl = 0;
+                        //    }
+                        //}
+                        //else {
+                        //    ClearMaterialDetailsList();
+                        //    MultiControl = 0;
+                        //}
+                        if (invType != '') {
+                            try {
+                                if (invType == 'single') {
+                                    MultiControl = 0;
+                                    ClearMaterialDetailsList();
+                                }
+                            } catch (Error) {
+                                ClearMaterialDetailsList();
+                                MultiControl = 0;
+                            }
+                        }
+                        else {
+                            ClearMaterialDetailsList();
+                            MultiControl = 0;
+                        }
+                        for (var i = 0; i < ListArr.length - 1; i++) {
+
+                            var txtUOM = "MaterialDetails_UOM".concat((MultiControl + 1).toString());
+                            if (document.getElementById(txtUOM)) {
+                                document.getElementById(txtUOM).value = '361';
+                            }
+
+                            ListArrValueList = ListArr[i].split('^');
+                            for (var j = 0; j < FieldMapListArr.length; j++) {
+
+                                FieldMapValueList = FieldMapListArr[j].split('|');
+                                var rowIndex = FieldMapValueList[0];
+                                if (document.getElementById(FieldMapValueList[1])) {
+                                    if (FieldMapValueList[1] == document.getElementById('FOASMetaHeader_hdnPOIsApproved').id && ListArrValueList[j].toString().trim().toLowerCase() != "true" && PO_ISAPPRVED != 'true') {
+                                        PO_ISAPPRVED = 'true';
+                                        document.getElementById('hdnisPO_Approved').value = "false";
+
+                                        alert('PO.NO. Not Yet Approved');
+                                    }
+
+                                }
+                                if (document.getElementById(FieldMapValueList[1])) {
+                                    try {
+                                        if (FieldMapValueList[1] == document.getElementById('FOASMetaHeader_hdnInvoiceType').id) {
+                                            invType = ListArrValueList[j].toString().trim().toLowerCase();
+
+                                        }
+                                    } catch (Error) {
+                                        invType = '';
+                                    }
+                                }
+
+                                if (document.getElementById(FieldMapValueList[1])) {
+                                    document.getElementById(FieldMapValueList[1]).value = ListArrValueList[j].toString().trim();
+
+                                    ///MULTIPLE INVOICE
+                                    //if (SRegID == '23' || SRegID == '13') {
+                                    //    if (document.getElementById('ctlGPRequest_UDF2')) {
+                                    //        try {
+                                    //            var InvoiceNo = document.getElementById('ctlGPRequest_UDF5').value;
+                                    //            if (document.getElementById('ctlGPRequest_UDF2').options[document.getElementById('ctlGPRequest_UDF2').selectedIndex].text == 'Multiple') {
+                                    //                //if (document.getElementById('ctlGPRequest_UDF16')) {
+
+                                    //                //    if (j == 0 && (MultiControl == 0 || i == 0)) {
+                                    //                //        var bindData = document.getElementById('ctlGPRequest_first_comment').value;
+                                    //                //        document.getElementById('ctlGPRequest_UDF16').value = bindData.toString().trim() + '   ' + document.getElementById('ctlGPRequest_UDF5').value.trim();
+                                    //                //    }
+                                    //                //    if (j < 4 && (MultiControl == 0 || i == 0)) {
+                                    //                //        var bindData = document.getElementById('ctlGPRequest_first_comment').value;
+                                    //                //        document.getElementById('ctlGPRequest_UDF16').value = bindData.toString().trim() + ' , ' + ListArrValueList[j].toString().trim();
+                                    //                //    }
+                                    //                //}
+                                    //            }
+                                    //        } catch (Error) {
+
+                                    //        }
+                                    //    }
+                                    //}
+                                }
+                                else {
+                                    ShowMaterialDetailsList(ListArr.length - 1, MultiControl);
+                                    var str1 = FieldMapValueList[1];
+                                    var detailFields = str1.concat((MultiControl + 1).toString());
+                                    if (document.getElementById(detailFields)) {
+                                        document.getElementById(detailFields).value = ListArrValueList[j].toString().trim();
+                                        var txtqty = "MaterialDetails_txtQty".concat((MultiControl + 1).toString());
+                                        var txtqtyreadOnly = "MaterialDetails_txtqtyread".concat((MultiControl + 1).toString());
+                                        if (detailFields == document.getElementById(txtqty).id) {
+                                            if (document.getElementById(txtqtyreadOnly)) {
+                                                document.getElementById(txtqtyreadOnly).value = ListArrValueList[j].toString().trim();
+                                            }
+                                        }
+
+                                        //if (SRegID == '23' || SRegID == '13' || SRegID == '32' || SRegID == '41' || SRegID == '54' || SRegID == '64' || SRegID == '74' || SRegID == '84') {
+                                            document.getElementById(detailFields).disabled = true;
+                                        //}
+
+
+                                        try {
+                                            for (var K = 0; K < document.getElementById(detailFields).options.length; K++) {
+                                                var dpValue = document.getElementById(detailFields).options[K].text.toLowerCase();
+                                                var selectValue = ListArrValueList[j].toLowerCase();
+                                                if (dpValue.trim() == selectValue.trim()) {
+                                                    document.getElementById(detailFields).selectedIndex = K;
+                                                    document.getElementById(detailFields).disabled = true;
+                                                    break;
+
+                                                }
+                                                else
+                                                {
+                                                    document.getElementById(detailFields).disabled = false;
+                                                }
+                                            }
+                                        }
+                                        catch (err) {
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            MultiControl++;
+                            if (SRegID == '23' || SRegID == '13' || SRegID == '32' || SRegID == '41' || SRegID == '54' || SRegID == '64' || SRegID == '74' || SRegID == '84') {
+                                ClearMaterial(controlID);
+                            }
+                        }
+                        if (ListArr.length > 100) {
+                            showError('Material Items are having more than 100 line Items');
+                        }
+                    }
+                    else {
+                        showError('Enter Valid No');
+                    }
+                }
+            }
+
+        return false;
+    }
+    function CheckPONOIsApproved(controlID) {
+        if (document.getElementById(controlID)) {
+            if (controlID == document.getElementById('FOASMetaHeader_hdnPOIsApproved').id && document.getElementById('FOASMetaHeader_hdnPOIsApproved').value.toLowerCase() == "false") {
+                PO_ISAPPRVED = "false";
+            }
+        }
+
+    }
+    var invoiceNO1;
+    var invoiceNO2;
+    var invoiceNO3;
+    function ClearMaterial(controlID) {
+        if (controlID == document.getElementById('ctlGPRequest_UDF5').id) {
+            document.getElementById('FOASMetaHeader_hdninvoiceNO1').value = document.getElementById('ctlGPRequest_UDF5').value;
+            invoiceNO1 = document.getElementById('FOASMetaHeader_hdninvoiceNO1').value;
+        }
+        if (controlID == document.getElementById('ctlGPRequest_UDF11').id) {
+            document.getElementById('FOASMetaHeader_hdninvoiceNO2').value = document.getElementById('ctlGPRequest_UDF11').value;
+            invoiceNO2 = document.getElementById('FOASMetaHeader_hdninvoiceNO2').value;
+        }
+        if (controlID == document.getElementById('ctlGPRequest_UDF20').id) {
+            document.getElementById('FOASMetaHeader_hdninvoiceNO3').value = document.getElementById('ctlGPRequest_UDF20').value;
+            invoiceNO3 = document.getElementById('FOASMetaHeader_hdninvoiceNO3').value;
+        }
+    }
+    function ResetMaterialDetails(id) {
+        var invoiceNo = "";
+        if ((document.getElementById('ctlGPRequest_UDF5').id == id)) {
+            if (document.getElementById('ctlGPRequest_UDF5').value == '') {
+                document.getElementById('ctlGPRequest_UDF5').value = '';
+                document.getElementById('ctlGPRequest_UDF9').value = '';
+                document.getElementById('ctlGPRequest_UDF12').value = '';
+                document.getElementById('ctlGPRequest_UDF1').value = '';
+                document.getElementById('ctlGPRequest_UDF8').value = '';
+                document.getElementById('ctlGPRequest_UDF13').value = '';
+                invoiceNo = document.getElementById('FOASMetaHeader_hdninvoiceNO1').value;
+            }
+            else
+                if (document.getElementById('ctlGPRequest_UDF5').value != document.getElementById('FOASMetaHeader_hdninvoiceNO1').value
+                    || document.getElementById('ctlGPRequest_UDF5').value == document.getElementById('FOASMetaHeader_hdninvoiceNO1').value)
+                    invoiceNo = document.getElementById('FOASMetaHeader_hdninvoiceNO1').value;
+        }
+        if ((document.getElementById('ctlGPRequest_UDF11').id == id)) {
+            if (document.getElementById('ctlGPRequest_UDF11').value == '') {
+                document.getElementById('ctlGPRequest_UDF11').value = '';
+                document.getElementById('ctlGPRequest_UDF19').value = '';
+                document.getElementById('ctlGPRequest_DC_No').value = '';
+                document.getElementById('ctlGPRequest_UDF16').value = '';
+                document.getElementById('ctlGPRequest_UDF17').value = '';
+                document.getElementById('ctlGPRequest_UDF18').value = '';
+                invoiceNo = document.getElementById('FOASMetaHeader_hdninvoiceNO2').value;
+            }
+            else
+                if (document.getElementById('ctlGPRequest_UDF11').value != document.getElementById('FOASMetaHeader_hdninvoiceNO2').value
+                    || document.getElementById('ctlGPRequest_UDF11').value == document.getElementById('FOASMetaHeader_hdninvoiceNO2').value)
+                    invoiceNo = document.getElementById('FOASMetaHeader_hdninvoiceNO2').value;
+        }
+        if ((document.getElementById('ctlGPRequest_UDF20').id == id)) {
+            if (document.getElementById('ctlGPRequest_UDF20').value == '') {
+                document.getElementById('ctlGPRequest_UDF20').value = '';
+                document.getElementById('ctlGPRequest_first_comment').value = '';
+                document.getElementById('ctlGPRequest_APPROX_VALUE').value = '';
+                document.getElementById('ctlGPRequest_LAST_COMMENT').value = '';
+                document.getElementById('ctlGPRequest_Description').value = '';
+                document.getElementById('ctlGPRequest_PERMIT').value = '';
+                invoiceNo = document.getElementById('FOASMetaHeader_hdninvoiceNO3').value;
+            }
+            else
+                if (document.getElementById('ctlGPRequest_UDF20').value != document.getElementById('FOASMetaHeader_hdninvoiceNO3').value
+                    || document.getElementById('ctlGPRequest_UDF20').value == document.getElementById('FOASMetaHeader_hdninvoiceNO3').value)
+                    invoiceNo = document.getElementById('FOASMetaHeader_hdninvoiceNO3').value;
+        }
+        if (invoiceNo != '') {
+            var a;
+            var fillString = "";
+            for (a = 1; a <= 100; a++) {
+                var ControlID = "MaterialDetails_hdnincoice" + a;
+                var stockCodeID = "MaterialDetails_txtCode" + a;
+                var description = "MaterialDetails_txtSno" + a;
+                var uom = "MaterialDetails_UOM" + a;
+                var Qty = "MaterialDetails_txtQty" + a;
+                var orderQty = "hdnOrderQty" + a;
+                var invoiceQty = "hdnOutStQty" + a;
+                document.getElementById(stockCodeID).disabled = false;
+                document.getElementById(description).disabled = false;
+                document.getElementById(uom).disabled = false;
+                document.getElementById(Qty).disabled = false;
+
+                if (document.getElementById(ControlID).value == invoiceNo) {
+                    document.getElementById(ControlID).value = '';
+                    document.getElementById(stockCodeID).value = '';
+                    document.getElementById(description).value = '';
+                    document.getElementById(uom).value = '0';
+                    document.getElementById(Qty).value = '';
+                    document.getElementById(orderQty).value = '';
+                    document.getElementById(invoiceQty).value = '';
+                }
+                if (document.getElementById(stockCodeID).value != "") {
+
+                    fillString += document.getElementById(ControlID).value + '|';
+                    fillString += document.getElementById(stockCodeID).value + '|';
+                    fillString += document.getElementById(description).value + '|';
+                    fillString += document.getElementById(uom).value + '|';
+                    fillString += document.getElementById(Qty).value + '|';
+                    fillString += document.getElementById(orderQty).value + '|';
+                    fillString += document.getElementById(invoiceQty).value + '|';
+
+
+                    document.getElementById(ControlID).value = '';
+                    document.getElementById(stockCodeID).value = '';
+                    document.getElementById(description).value = '';
+                    document.getElementById(uom).value = '0';
+                    document.getElementById(Qty).value = '';
+                    document.getElementById(orderQty).value = '';
+                    document.getElementById(invoiceQty).value = '';
+
+                    fillString += ";";
+                }
+            }
+
+
+            var splitContolValues = new String();
+            var ListOfValues = new Array();
+            ListOfValues = fillString.split(';');
+            MultiControl = 0;
+            for (var i = 0; i < ListOfValues.length - 1 ; i++) {
+                splitContolValues = ListOfValues[i].split('|');
+
+                var ControlID = "MaterialDetails_hdnincoice" + (i + 1);
+                var stockCodeID = "MaterialDetails_txtCode" + (i + 1);
+                var description = "MaterialDetails_txtSno" + (i + 1);
+                var uom = "MaterialDetails_UOM" + (i + 1);
+                var Qty = "MaterialDetails_txtQty" + (i + 1);
+                var orderQty = "hdnOrderQty" + (i + 1);
+                var invoiceQty = "hdnOutStQty" + (i + 1);
+
+                document.getElementById(ControlID).value = splitContolValues[0];
+                document.getElementById(stockCodeID).value = splitContolValues[1];
+                document.getElementById(stockCodeID).disabled = true;
+                document.getElementById(description).value = splitContolValues[2];
+                document.getElementById(description).disabled = true;
+                document.getElementById(uom).value = splitContolValues[3];
+                document.getElementById(uom).disabled = true;
+                document.getElementById(Qty).value = splitContolValues[4];
+                document.getElementById(Qty).disabled = true;
+                document.getElementById(orderQty).value = splitContolValues[5];
+                document.getElementById(invoiceQty).value = splitContolValues[6];
+
+                MultiControl++;
+            }
+        }
+    }
+
+    function ClearMaterialDetailsList() {
+
+        for (var i = 1; i <= 100; i++) {
+
+            var txtCode = "MaterialDetails_txtCode".concat(i.toString());
+            var txtSno = "MaterialDetails_txtSno".concat(i.toString());
+            var txtUOM = "MaterialDetails_UOM".concat(i.toString());
+            var txtQty = "MaterialDetails_txtQty".concat(i.toString());
+            var txtQtyrdOnly = "MaterialDetails_txtqtyread".concat(i.toString());
+            if (document.getElementById(txtCode)) {
+                document.getElementById(txtCode).value = '';
+                document.getElementById(txtCode).disabled = false;
+            }
+            if (document.getElementById(txtSno)) {
+                document.getElementById(txtSno).value = '';
+                document.getElementById(txtSno).disabled = false;
+            }
+            if (document.getElementById(txtUOM)) {
+                document.getElementById(txtUOM).value = '0';
+                document.getElementById(txtUOM).disabled = false;
+            }
+            if (document.getElementById(txtQty)) {
+                document.getElementById(txtQty).value = '';
+                document.getElementById(txtQty).disabled = false;
+            }
+            if (document.getElementById(txtQtyrdOnly)) {
+                document.getElementById(txtQtyrdOnly).value = '';
+
+            }
+        }
+        document.getElementById('MaterialDetails_trrow8').style.display = "none";
+        document.getElementById('MaterialDetails_trrow9').style.display = "none";
+        document.getElementById('MaterialDetails_trrow10').style.display = "none";
+        document.getElementById('MaterialDetails_trrow11').style.display = "none";
+        document.getElementById('MaterialDetails_trrow12').style.display = "none";
+        document.getElementById('MaterialDetails_trrow13').style.display = "none";
+        document.getElementById('MaterialDetails_trrow14').style.display = "none";
+        document.getElementById('MaterialDetails_trrow15').style.display = "none";
+        document.getElementById('MaterialDetails_trrow16').style.display = "none";
+        document.getElementById('MaterialDetails_trrow17').style.display = "none";
+        document.getElementById('MaterialDetails_trrow18').style.display = "none";
+        document.getElementById('MaterialDetails_trrow19').style.display = "none";
+        document.getElementById('MaterialDetails_trrow20').style.display = "none";
+        document.getElementById('MaterialDetails_trrow21').style.display = "none";
+        document.getElementById('MaterialDetails_trrow22').style.display = "none";
+        document.getElementById('MaterialDetails_trrow23').style.display = "none";
+        document.getElementById('MaterialDetails_trrow24').style.display = "none";
+        document.getElementById('MaterialDetails_trrow25').style.display = "none";
+        document.getElementById('MaterialDetails_trrow26').style.display = "none";
+        document.getElementById('MaterialDetails_trrow27').style.display = "none";
+        document.getElementById('MaterialDetails_trrow28').style.display = "none";
+        document.getElementById('MaterialDetails_trrow29').style.display = "none";
+        document.getElementById('MaterialDetails_trrow30').style.display = "none";
+        document.getElementById('MaterialDetails_trrow31').style.display = "none";
+        document.getElementById('MaterialDetails_trrow32').style.display = "none";
+        document.getElementById('MaterialDetails_trrow33').style.display = "none";
+        document.getElementById('MaterialDetails_trrow34').style.display = "none";
+        document.getElementById('MaterialDetails_trrow35').style.display = "none";
+        document.getElementById('MaterialDetails_trrow36').style.display = "none";
+        document.getElementById('MaterialDetails_trrow37').style.display = "none";
+        document.getElementById('MaterialDetails_trrow38').style.display = "none";
+        document.getElementById('MaterialDetails_trrow39').style.display = "none";
+        document.getElementById('MaterialDetails_trrow40').style.display = "none";
+        document.getElementById('MaterialDetails_trrow41').style.display = "none";
+        document.getElementById('MaterialDetails_trrow42').style.display = "none";
+        document.getElementById('MaterialDetails_trrow43').style.display = "none";
+        document.getElementById('MaterialDetails_trrow44').style.display = "none";
+        document.getElementById('MaterialDetails_trrow45').style.display = "none";
+        document.getElementById('MaterialDetails_trrow46').style.display = "none";
+        document.getElementById('MaterialDetails_trrow47').style.display = "none";
+        document.getElementById('MaterialDetails_trrow48').style.display = "none";
+        document.getElementById('MaterialDetails_trrow49').style.display = "none";
+        document.getElementById('MaterialDetails_trrow50').style.display = "none";
+        document.getElementById('MaterialDetails_trrow51').style.display = "none";
+        document.getElementById('MaterialDetails_trrow52').style.display = "none";
+        document.getElementById('MaterialDetails_trrow53').style.display = "none";
+        document.getElementById('MaterialDetails_trrow54').style.display = "none";
+        document.getElementById('MaterialDetails_trrow55').style.display = "none";
+        document.getElementById('MaterialDetails_trrow56').style.display = "none";
+        document.getElementById('MaterialDetails_trrow57').style.display = "none";
+        document.getElementById('MaterialDetails_trrow58').style.display = "none";
+        document.getElementById('MaterialDetails_trrow59').style.display = "none";
+        document.getElementById('MaterialDetails_trrow60').style.display = "none";
+        document.getElementById('MaterialDetails_trrow61').style.display = "none";
+        document.getElementById('MaterialDetails_trrow62').style.display = "none";
+        document.getElementById('MaterialDetails_trrow63').style.display = "none";
+        document.getElementById('MaterialDetails_trrow64').style.display = "none";
+        document.getElementById('MaterialDetails_trrow65').style.display = "none";
+        document.getElementById('MaterialDetails_trrow66').style.display = "none";
+        document.getElementById('MaterialDetails_trrow67').style.display = "none";
+        document.getElementById('MaterialDetails_trrow68').style.display = "none";
+        document.getElementById('MaterialDetails_trrow69').style.display = "none";
+        document.getElementById('MaterialDetails_trrow70').style.display = "none";
+        document.getElementById('MaterialDetails_trrow71').style.display = "none";
+        document.getElementById('MaterialDetails_trrow72').style.display = "none";
+        document.getElementById('MaterialDetails_trrow73').style.display = "none";
+        document.getElementById('MaterialDetails_trrow74').style.display = "none";
+        document.getElementById('MaterialDetails_trrow75').style.display = "none";
+        document.getElementById('MaterialDetails_trrow76').style.display = "none";
+        document.getElementById('MaterialDetails_trrow77').style.display = "none";
+        document.getElementById('MaterialDetails_trrow78').style.display = "none";
+        document.getElementById('MaterialDetails_trrow79').style.display = "none";
+        document.getElementById('MaterialDetails_trrow80').style.display = "none";
+        document.getElementById('MaterialDetails_trrow81').style.display = "none";
+        document.getElementById('MaterialDetails_trrow82').style.display = "none";
+        document.getElementById('MaterialDetails_trrow83').style.display = "none";
+        document.getElementById('MaterialDetails_trrow84').style.display = "none";
+        document.getElementById('MaterialDetails_trrow85').style.display = "none";
+        document.getElementById('MaterialDetails_trrow86').style.display = "none";
+        document.getElementById('MaterialDetails_trrow87').style.display = "none";
+        document.getElementById('MaterialDetails_trrow88').style.display = "none";
+        document.getElementById('MaterialDetails_trrow89').style.display = "none";
+        document.getElementById('MaterialDetails_trrow90').style.display = "none";
+        document.getElementById('MaterialDetails_trrow91').style.display = "none";
+        document.getElementById('MaterialDetails_trrow92').style.display = "none";
+        document.getElementById('MaterialDetails_trrow93').style.display = "none";
+        document.getElementById('MaterialDetails_trrow94').style.display = "none";
+        document.getElementById('MaterialDetails_trrow95').style.display = "none";
+        document.getElementById('MaterialDetails_trrow96').style.display = "none";
+        document.getElementById('MaterialDetails_trrow97').style.display = "none";
+        document.getElementById('MaterialDetails_trrow98').style.display = "none";
+        document.getElementById('MaterialDetails_trrow99').style.display = "none";
+        document.getElementById('MaterialDetails_trrow100').style.display = "none";
+
+    }
+    function ShowMaterialDetailsList(nowOfRow, MultiControl) {
+        var nowOfRows = 0;
+        if (nowOfRow > MultiControl) {
+            nowOfRows = nowOfRow;
+        } else {
+            nowOfRows = MultiControl + 1;
+        }
+
+        if (nowOfRows > 5 && nowOfRows <= 10) {
+
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+            //document.getElementById('MaterialDetails_trrow8').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow9').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow10').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow11').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow12').style.display = "table-row";
+            //document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+            //document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+
+        }
+        else if (nowOfRows > 10 && nowOfRows <= 15) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+            //document.getElementById('MaterialDetails_trrow8').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow9').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow10').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow11').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow12').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow13').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow14').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow15').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow16').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow17').style.display = "table-row";
+            //document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+            //document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+
+        }
+        else if (nowOfRows > 15 && nowOfRows <= 20) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+            //document.getElementById('MaterialDetails_trrow8').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow9').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow10').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow11').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow12').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow13').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow14').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow15').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow16').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow17').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow18').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow19').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow20').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow21').style.display = "table-row";
+            //document.getElementById('MaterialDetails_trrow22').style.display = "table-row";
+            //document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+            //document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+        }
+        else if (nowOfRows > 20 && nowOfRows <= 25) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 25 && nowOfRows <= 30) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 30 && nowOfRows <= 35) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 35 && nowOfRows <= 40) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 40 && nowOfRows <= 45) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 45 && nowOfRows <= 50) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 50 && nowOfRows <= 55) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 55 && nowOfRows <= 60) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 60 && nowOfRows <= 65) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 65 && nowOfRows <= 70) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 70 && nowOfRows <= 75) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 75 && nowOfRows <= 80) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 80 && nowOfRows <= 85) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 85 && nowOfRows <= 90) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 90 && nowOfRows <= 95) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "table";
+            }
+        }
+        else if (nowOfRows > 95 && nowOfRows <= 100) {
+            for (var i = 8; i <= nowOfRows + 2; i++) {
+                document.getElementById('MaterialDetails_trrow' + i).style.display = "table-row";
+                document.getElementById('MaterialDetails_lnkremove').style.display = "table";
+                document.getElementById('MaterialDetails_lnkadd').style.display = "none";
+            }
+        }
+        return false;
+    }
+    function CboChangeInvoice() {
+        if (document.getElementById('ctlGPRequest_UDF2').options[document.getElementById('ctlGPRequest_UDF2').selectedIndex].text == 'Single') {
+            document.getElementById('ctlGPRequest_btn').style.display = "none";
+            document.getElementById('ctlGPRequest_btnRemove').style.display = "none";
+            document.getElementById('ctlGPRequest_titleRow13').style.display = "none";
+            document.getElementById('ctlGPRequest_titleRow14').style.display = "none";
+            document.getElementById('ctlGPRequest_titleRow16').style.display = "none";
+            document.getElementById('ctlGPRequest_titleRow18').style.display = "none";
+            document.getElementById('ctlGPRequest_titleRow20').style.display = "none";
+            document.getElementById('ctlGPRequest_titleRow21').style.display = "none";
+            document.getElementById('ctlGPRequest_titleRow23').style.display = "none";
+            document.getElementById('ctlGPRequest_titleRow25').style.display = "none";
+        }
+        else {
+            if ((document.getElementById('ctlGPRequest_UDF2').options[document.getElementById('ctlGPRequest_UDF2').selectedIndex].text == 'Multiple') &&
+           (document.getElementById('ctlGPRequest_btn').style.display == "none")) {
+                document.getElementById('ctlGPRequest_btn').style.display = "table-row";
+            }
+        }
+        if (document.getElementById('ctlGPRequest_UDF2').value != "0" && document.getElementById('MaterialDetails_txtCode1').value != '') {
+            alert("Select the Invoice type before the Enteries!");
+            location.reload();
+        }
+    }
+
+    function CallCustomer(ServiceName, ServiceType, MethodType, OutputType, FieldsMap, InputQuery, UserControl, FieldValueParamter, ValidationInput) {
+        var splitContolValues = new String();
+        var fieldInput = new String();
+        var filedList = new String();
+        var controlID = new String();
+        var ListOfValues = new Array();
+        ListOfValues = FieldValueParamter.split(';');
+
+        for (var i = 0; i < ListOfValues.length - 1; i++) {
+
+            splitContolValues = ListOfValues[i].split('|');
+
+            controlID = splitContolValues[1];
+
+            if (document.getElementById(controlID)) {
+                if (document.getElementById(controlID).value == '') {
+                    document.getElementById(controlID).focus();
+                    showError('ERR_LBL_ENTER_ATLEAST_THREE_CHARACTERS');
+                    return false;
+                } else {
+
+                    fieldInput += " '" + document.getElementById(controlID).value + "' ";
+                    if (i < (ListOfValues.length - 2))
+                        fieldInput += ",";
+
+                }
+            }
+        }
+        if (document.getElementById(splitContolValues[1])) {
+            if ((document.getElementById(splitContolValues[1]).value).length < 3) {
+                showError('ERR_LBL_ENTER_ATLEAST_THREE_CHARACTERS');
+                return false;
+            }
+        }
+        if (filedList != '' && fieldInput == '') {
+            showError('ERR_MATERIAL_ERP_FIELD_VALIDATION');
+            return false;
+        } else {
+            InputQuery += fieldInput;
+            fieldInput = '';
+
+            var ReturnValue = InvokeAjaxMethodSync("GetValidation", "fields=" + filedList + "&values=" + fieldInput + "&query=" + InputQuery);
+            if (ReturnValue != '') {
+                var ListArr = new Array();
+                ListArr = ReturnValue.split('|');
+                for (var i = 0; i < ListArr.length - 1; i++) {
+                    ListArrValueList = ListArr[i].split('^');
+                    var sdata = ListArrValueList[0];
+                    document.getElementById(controlID).value = sdata;
+                }
+            }
+            else {
+                document.getElementById(controlID).value = '';
+                showError("ERR_LBL_CUSTOMER_DOESNOT_EXIST");
+                document.getElementById(controlID).focus();
+            }
+        }
+        return false;
+    }
+
+
+    function ScanQrCode(ServiceName, ServiceType, MethodType, OutputType, FieldsMap, InputQuery, UserControl, FieldValueParamter, ValidationInput) {
+        var splitContolValues = new String();
+        var fieldInput = new String();
+        var filedList = new String();
+        var controlID = new String();
+        var ListOfValues = new Array();
+        document.getElementById("hdnVisitorId").value = '';
+        ListOfValues = FieldValueParamter.split(';');
+        for (var i = 0; i < ListOfValues.length - 1; i++) {
+
+            splitContolValues = ListOfValues[i].split('|');
+        }
+
+        controlID = splitContolValues[1];
+        if (document.getElementById(controlID)) {
+            if (document.getElementById(controlID).value == '') {
+                document.getElementById(controlID).focus();
+                showError('Please Scan QRcode!');
+                document.getElementById(controlID).focus();
+                return false;
+            }
+        }
+        if (document.getElementById(controlID).value != '') {
+            var VisitorDetails = document.getElementById(controlID).value;
+            if (VisitorDetails != '') {
+                var ListOfData = new Array();
+                var ContactId = '';
+                var MailID1 = '';
+                ListOfData = VisitorDetails.split('^');
+                if (ListOfData.length > 1) {
+                    if (ListOfData[0].toLowerCase() == 'appointment') {
+                            document.getElementById('hdnAppointmentid').value = ListOfData[1];
+                            ListOfValues = FieldValueParamter.split(';');
+                            for (var i = 0; i < ListOfValues.length - 1; i++) {
+
+                                splitContolValues = ListOfValues[i].split('|');
+
+                                controlID = splitContolValues[1];
+
+                                if (document.getElementById(controlID)) {
+                                    if (document.getElementById(controlID).value == '') {
+                                        document.getElementById(controlID).focus();
+                                        showError('Please Scan QRcode!');
+                                    return false;
+                                }
+                                else {
+
+                                    fieldInput += " '" + document.getElementById('hdnAppointmentid').value + "' ";
+                                    if (i < (ListOfValues.length - 2))
+                                        fieldInput += ",";
+
+                                }
+                            }
+                        }
+                         // document.getElementById(controlID).value = '';
+                        if (filedList != '' && fieldInput == '') {
+                            showError('ERR_MATERIAL_ERP_FIELD_VALIDATION');
+                    document.getElementById(controlID).focus();
+                    //document.getElementById(controlID).value = '';
+                    return false;
+                } else {
+                    InputQuery += fieldInput;
+                    fieldInput = '';
+
+                    var ReturnValue = InvokeAjaxMethodSync("GetValidation", "fields=" + filedList + "&values=" + fieldInput + "&query=" + InputQuery);
+
+                    if (ReturnValue != '' && FieldsMap != '') {
+
+                        var ListArrValueList = new String();
+                        var FieldMapValueList = new String();
+
+                        var FieldMapListArr = new Array();
+                        FieldMapListArr = FieldsMap.split(';');
+                        var ListArr = new Array();
+                        ListArr = ReturnValue.split('|');
+
+
+                        for (var i = 0; i < ListArr.length - 1; i++) {
+
+                            ListArrValueList = ListArr[i].split('^');
+                            for (var j = 0; j < FieldMapListArr.length - 1; j++) {
+
+                                FieldMapValueList = FieldMapListArr[j].split('|');
+                                var rowIndex = FieldMapValueList[0];
+
+                                if (document.getElementById(FieldMapValueList[1])) {
+                                    document.getElementById(FieldMapValueList[1]).value = ListArrValueList[j].toString().trim();
+                                    if (FieldMapValueList[1].toString() == 'ctlVisitorRegister_txt_CONTACT_ID') {
+                                        if ('false' == 'false')
+                                            document.getElementById('ctlVisitorRegister_CONTACT_ID_I').value = ListArrValueList[j].toString().trim();
+                                    }
+                                    if (FieldMapValueList[1].toString() == 'ctlVisitorRegister_txt_COMPANY_ID') {
+                                        if ('false' == 'false')
+                                            document.getElementById('ctlVisitorRegister_COMPANY_ID_I').value = ListArrValueList[j].toString().trim();//gridLookupCompany.SetValue(ListArrValueList[j].toString().trim());
+
+                                    }
+                                    if (FieldMapValueList[1].toString() == 'FOASWebcamPreview_hdnShowImageServerGetUrl') {
+                                        var IsImage = '';
+                                        var imageUrl = document.getElementById('hdnVisitorImageUrl').value + ListArrValueList[j].toString().trim();
+                                        if (UrlExists(imageUrl)) {
+                                            document.getElementById('FOASWebcamPreview_hdnShowImageServerGetUrl').value = imageUrl;
+                                            document.getElementById('hdnQRCodeValues').value = '';
+                                            initWCPComponent();
+                                        }
+                                        else {
+                                            document.getElementById('FOASWebcamPreview_hdnShowImageServerGetUrl').value = '';
+                                            document.getElementById('hdnQRCodeValues').value = '';
+                                            initWCPComponent();
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+                        // document.getElementById(controlID).value = '';
+                        document.getElementById(controlID).focus();
+                        return false;
+                    }
+                    else {
+                        var FieldMapListArr = new Array();
+                        FieldMapListArr = FieldsMap.split(';');
+                        for (var j = 0; j < FieldMapListArr.length - 1; j++) {
+
+                            FieldMapValueList = FieldMapListArr[j].split('|');
+                            var rowIndex = FieldMapValueList[0];
+
+                            if (document.getElementById(FieldMapValueList[1])) {
+                                document.getElementById(FieldMapValueList[1]).value = '';
+                                if (FieldMapValueList[1].toString() == 'ctlVisitorRegister_txt_CONTACT_ID') {
+                                    if ('false' == 'false')
+                                        document.getElementById('ctlVisitorRegister_CONTACT_ID_I').value = '';
+                                }
+                                if (FieldMapValueList[1].toString() == 'ctlVisitorRegister_txt_COMPANY_ID') {
+                                    if ('false' == 'false')
+                                        document.getElementById('ctlVisitorRegister_COMPANY_ID_I').value = '';
+                                }
+                                if (FieldMapValueList[1].toString() == 'FOASWebcamPreview_hdnShowImageServerGetUrl') {
+                                    var IsImage = '';
+                                    var imageUrl = document.getElementById('hdnVisitorImageUrl').value + '';
+                                    if (UrlExists(imageUrl)) {
+                                        document.getElementById('FOASWebcamPreview_hdnShowImageServerGetUrl').value = imageUrl;
+                                        document.getElementById('hdnQRCodeValues').value = '';
+                                        initWCPComponent();
+                                    }
+                                    else {
+                                        document.getElementById('FOASWebcamPreview_hdnShowImageServerGetUrl').value = '';
+                                        document.getElementById('hdnQRCodeValues').value = '';
+                                        initWCPComponent();
+                                    }
+                                }
+
+                            }
+                        }
+                        showError('Invalid Appointment Details!');
+                        //document.getElementById(controlID).value = '';
+                        document.getElementById(controlID).focus();
+                        return false;
+                    }
+                }
+
+
+
+            }
+            else if (ListOfData.length >= 4) {
+                // Tenant Portal QrCode for latin characters checking length 
+                var ID = '';
+                var filepath = '';
+                ID = ListOfData[0];
+                document.getElementById("hdnVisitorId").value = ID;
+
+                if ($.browser.msie && window.XDomainRequest) {
+                    // Use Microsoft XDR
+                    var xdr = new XDomainRequest();
+                    xdr.open("GET", "http://$server-ip$/TenantPortal/" + "inc/RestService.svc/getselfRegistrationsDetails/" + ID);
+                     xdr.onload = function () {
+                         var JSON = $.parseJSON(xdr.responseText);
+                         if (JSON == null || typeof (JSON) == 'undefined') {
+                             JSON = $.parseJSON(data.firstChild.textContent);
+                         }
+                         assignselfregistrationdetails(JSON);
+                     };
+                     xdr.send();
+                 } else {
+                     $.ajax({
+                         type: "GET",
+                         url: "http://$server-ip$/TenantPortal/" + "inc/RestService.svc/getselfRegistrationsDetails/" + ID,
+                         success: function (data) {
+                             var res = JSON.parse(JSON.stringify(data));
+                             assignselfregistrationdetails(res);
+                         },
+                         error: function (xhr, textStatus, errorThrown) {
+                             console.log(errorThrown);
+                         }
+                     });
+                }
+
+                 document.getElementById(controlID).focus();
+                 return false;
+             }
+     }
+ }
+}
+}
+function assignselfregistrationdetails(res) {
+    if (res != null && res != '') {
+        if (res[0].ID != null && res[0].ID > 0) {
+            if (res[0].REGID.toLowerCase() != "undefined") {
+                if (res[0].REGID != '') {
+                    showError('QRCode Already Used');
+                            return false;
+                        }
+                    }
+                    if (res[0].APPROVAL_WORKFLOW.toLowerCase() != "undefined") {
+                        if (res[0].APPROVAL_WORKFLOW.toLowerCase() == "true") {
+                            if (res[0].APPROVAL_STATUS.toLowerCase() != "undefined") {
+                                if (res[0].APPROVAL_STATUS == '') {
+                                    showError('Host Not Approved');
+                                    return false;
+                                }
+                                else if (res[0].APPROVAL_STATUS.toLowerCase() == "false") {
+                                    showError('Host Rejected the Visitor');
+                                        return false;
+                                    }
+                            }
+
+                        }
+                    }
+                    if (document.getElementById('ctlVisitorRegister_First_Name')) {
+                        if (res[0].ID != '' && res[0].ID.toLowerCase() != "undefined") {
+                            document.getElementById('ctlVisitorRegister_First_Name').value = res[0].firstname;
+                        }
+                    }
+                    if (document.getElementById('ctlVisitorRegister_txt_CONTACT_ID')) {
+                        if (res[0].lastname != '' && res[0].lastname.toLowerCase() != "undefined") {
+                            document.getElementById('ctlVisitorRegister_txt_CONTACT_ID').value = res[0].lastname;
+                            if ('false' == 'false')
+                            document.getElementById('ctlVisitorRegister_CONTACT_ID_I').value = res[0].lastname;
+                    }
+                }
+                if (document.getElementById('ctlVisitorRegister_txt_COMPANY_ID')) {
+                    if (res[0].company != '' && res[0].company.toLowerCase() != "undefined") {
+                        document.getElementById('ctlVisitorRegister_txt_COMPANY_ID').value = res[0].company;
+                        if ('false' == 'false')
+                            document.getElementById('ctlVisitorRegister_COMPANY_ID_I').value = res[0].company;//gridLookupCompany.SetValue(res[0].company);
+                    }
+                }
+                if (document.getElementById('ctlVisitorRegister_Email_ID')) {
+                    if (res[0].Email != '' && res[0].Email.toLowerCase() != "undefined") {
+                        document.getElementById('ctlVisitorRegister_Email_ID').value = res[0].Email;
+                    }
+                }
+                if (document.getElementById('ctlVisitorRegister_Mobile_No')) {
+                    if (res[0].MobileNo != '' && res[0].MobileNo.toLowerCase() != "undefined") {
+                        document.getElementById('ctlVisitorRegister_Mobile_No').value = res[0].MobileNo;
+                    }
+                }
+                if (document.getElementById('ctlVisitorRegister_Visitor_Address')) {
+                    if (res[0].Address != '' && res[0].Address.toLowerCase() != "undefined") {
+                        document.getElementById('ctlVisitorRegister_Visitor_Address').value = res[0].Address;
+                    }
+                }
+                if (document.getElementById('ctlVisitorRegister_Email_ID')) {
+                    if (document.getElementById('ctlVisitorRegister_Email_ID').value != '') {
+                        MailID1 = document.getElementById('ctlVisitorRegister_Email_ID').value;
+                        ContactId = InvokeAjaxMethodSync("GetContactIsByEmailId", "MailID1=" + MailID1);
+                        if (ContactId != '')
+                            document.getElementById('ctlVisitorRegister_hdn_CONTACT_ID').value = ContactId;
+                    }
+                }
+                if (res[0].ToMeet != '' && res[0].ToMeet.toLowerCase() != "undefined") {
+                    var tomeetId = '';
+                    tomeetId = InvokeAjaxMethodSync("GetTomeetId", "eName=" + res[0].ToMeet);
+                    if (tomeetId != '')
+                        document.getElementById('hdn_tomeetID').value = tomeetId;
+
+                    if ('false' == 'true')
+                    {
+                        if (tomeetId != '') {
+                            if (document.getElementById('ctlVisitorRegister_TO_MEET_EMP_ID')) {
+                                document.getElementById('ctlVisitorRegister_TO_MEET_EMP_ID').value = tomeetId;
+                            }
+                            gridLookupToMeet.SetText(res[0].ToMeet);
+                        }
+                    }
+                }
+                try {
+                    if (res[0].Visitor_Photo != null && res[0].Visitor_Photo != '') {
+                        var obj = {};
+                        obj.IMAGE_STRING = res[0].Visitor_Photo;
+                        $.ajax({
+                            type: "POST",
+                            url: "../../inc/ws/RestService.svc/SaveVisitorImage",
+                            data: JSON.stringify(obj),
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function (r) {
+                                var imageUrl = document.getElementById('hdnVisitorImageUrl').value + r.RESULT;
+                                document.getElementById('FOASWebcamPreview_hdnShowImageServerGetUrl').value = imageUrl;
+                                document.getElementById('hdnQRCodeValues').value = r.RESULT;
+                                initWCPComponent();
+                            }
+                        });
+
+
+                    }
+                    else {
+                        document.getElementById('hdnQRCodeValues').value = '';
+                        document.getElementById('FOASWebcamPreview_hdnShowImageServerGetUrl').value = '';
+                    }
+                } catch (e) {
+                    document.getElementById('hdnQRCodeValues').value = '';
+                    document.getElementById('FOASWebcamPreview_hdnShowImageServerGetUrl').value = '';
+                }
+
+
+
+
+                if (document.getElementById("ctlVisitorRegister_PURPOSE")) {
+                    if (res[0].Purpose != '' && res[0].Purpose.toLowerCase() != "undefined") {
+                        var desiredValue = res[0].Purpose.toString().toLocaleLowerCase();
+                        var el = document.getElementById("ctlVisitorRegister_PURPOSE");
+                        for (var i = 0; i < el.options.length; i++) {
+                            if (el.options[i].text.toString().toLocaleLowerCase() == desiredValue) {
+                                el.selectedIndex = i;
+                                // break;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        else {
+            showError('Invalid Appointment Details!');
+                return false;
+            }
+        }
+        function CallAcknowledger(ServiceName, ServiceType, MethodType, OutputType, FieldsMap, InputQuery, UserControl, FieldValueParamter, ValidationInput) {
+            try {
+                var EmployeePop2 = '';
+                ChangeEmployees = ChangeAcknowledgerName;
+                if (EmployeePop2) {
+                    EmployeePop2.focus();
+                }
+                else {
+                    EmployeePop2 = window.open('../../PopUpEmployees.aspx', 'Pop', 'height=415' + sPopupWindowFeatures);
+                }
+            }
+            catch (e) {
+                EmployeePop2 = window.open('../../PopUpEmployees.aspx', 'Pop', 'height=415' + sPopupWindowFeatures);
+            }
+        }
+        function imageExists(url, callback) {
+            var img = new Image();
+            img.onload = function () { callback(true); };
+            img.onerror = function () { callback(false); };
+            img.src = url;
+        }
+        function SetOnFocus() {
+            if (document.getElementById('ctlVisitorRegister_QRCodeScan')) {
+                document.getElementById('ctlVisitorRegister_QRCodeScan').value = '';
+                document.getElementById('ctlVisitorRegister_QRCodeScan').focus();
+                return false;
+            }
+        }
+        function SelectAcrossLocationHost(ctlId) {
+
+            var chkPassport = document.getElementById(ctlId);
+            if (chkPassport.checked) {
+                document.getElementById('hdnOtherLocation').value = 1;
+            } else {
+                document.getElementById('hdnOtherLocation').value = 0;
+            }
+            gridLookupToMeet.GetGridView().Refresh();
+
+        }
+        function CboLocationChange() {
+
+            var LocationID = document.getElementById('ctlVisitorRegister_LOCATIONID').value;
+            if (LocationID != '' && LocationID != 0) {
+                document.getElementById('hdnLocationID').value = LocationID;
+            }
+            document.getElementById('ctlVisitorRegister_txt_TO_MEET_EMP_ID').value = '';
+            document.getElementById('ctlVisitorRegister_TO_MEET_EMP_ID_I').value = '';
+            gridLookupToMeet.GetGridView().Refresh();
+        }
+        function MandatoryOnBlur(Id, removeId) {
+
+            var EmailOrMobileNoMandatory = 'False';
+
+    if (document.getElementById(Id) && document.getElementById(Id).value != "" && EmailOrMobileNoMandatory.toLowerCase() == "true") {
+        var strValue = document.getElementById('ctlVisitorRegister_tblMain__HDS_REQ_FIELDS_LIST').value;
+        strValue = strValue.replace("," + removeId, "");
+        document.getElementById('ctlVisitorRegister_tblMain__HDS_REQ_FIELDS_LIST').value = strValue;
+    }
+}
+function callCascading() {
+    var ListOfFileds = "";
+
+    if (document.getElementById('ctlVisitorRegister_HDS_CAS_FIELDS_LIST')) {
+        ListOfFileds = document.getElementById('ctlVisitorRegister_HDS_CAS_FIELDS_LIST').value;
+    }
+    else if (document.getElementById('ctlGPRequest_HDS_CAS_FIELDS_LIST')) {
+        ListOfFileds = document.getElementById('ctlGPRequest_HDS_CAS_FIELDS_LIST').value;
+    }
+    else if (document.getElementById('ctlVehicleRegister_HDS_CAS_FIELDS_LIST')) {
+        ListOfFileds = document.getElementById('ctlVehicleRegister_HDS_CAS_FIELDS_LIST').value;
+    }
+    else if (document.getElementById('ctlContractorRegister_HDS_CAS_FIELDS_LIST')) {
+        ListOfFileds = document.getElementById('ctlContractorRegister_HDS_CAS_FIELDS_LIST').value;
+    }
+    else if (document.getElementById('ctlMeetingRegister_HDS_CAS_FIELDS_LIST')) {
+        ListOfFileds = document.getElementById('ctlMeetingRegister_HDS_CAS_FIELDS_LIST').value;
+    }
+
+    if (ListOfFileds != "") {
+        var arrList = ListOfFileds.split(';');
+        for (var i = 0; i < arrList.length - 1; i++) {
+            arrListValues = arrList[i].split('|');
+            FillCascadingCombo(arrListValues[0], arrListValues[1]);
+        }
+    }
+}
+
+function FillCascadingCombo(sControl, dControl) {
+
+    var responseText = "";
+    var Id = "0";
+    var val = "";
+
+    var dValue = document.getElementById(dControl).attributes.dValue.value;
+    var dFieldType = document.getElementById(dControl).attributes.dFieldType.value;
+
+    var dtable = document.getElementById(sControl).attributes.dtable.value;
+    var dfields = document.getElementById(sControl).attributes.dfields.value;
+    var dcondtion = document.getElementById(sControl).attributes.dcondtion.value;
+    var sFieldType = document.getElementById(sControl).attributes.dFieldType.value;
+
+    if (sFieldType.toLowerCase() == "multiselectdropdown") {
+
+        Id = document.getElementById(sControl).value;
+        val = document.getElementById(sControl).value;
+    }
+    else if (sFieldType.toLowerCase() == "dropdown") {
+        Id = document.getElementById(sControl).value;
+        val = document.getElementById(sControl).options[document.getElementById(sControl).selectedIndex].text;
+    }
+
+    if (Id != "0" && Id != "") {
+
+        dcondtion = dcondtion.replace("@val", val);
+        dcondtion = dcondtion.replace("@id", Id);
+
+        responseText = InvokeAjaxMethodSync("GetCascadingValue", "strTable=" + dtable + "&strFields=" + dfields + "&strCondition=" + dcondtion);
+    }
+
+    if (dFieldType.toLowerCase() == "dropdown") {
+        fillDropDown(dControl, responseText, dValue);
+    }
+    else if (dFieldType.toLowerCase() == "multiselectdropdown") {
+        fillDropDownCheckBox(checkListBox, responseText, dValue);
+
+    }
+    if (dControl == 'ctlVisitorRegister_E_MEETING_ROOM') {
+        if (document.getElementById("ctlVisitorRegister_E_MEETING_ROOM").parentElement.children.length > 1)
+            if (responseText == '') {
+                document.getElementById("ctlVisitorRegister_E_MEETING_ROOM").parentElement.children[1].remove();
+                document.getElementById('FOASMetaHeader_room_label').value = val;
+            }
+            else if (document.getElementById('FOASMetaHeader_room_label').value != val)
+                document.getElementById("ctlVisitorRegister_E_MEETING_ROOM").parentElement.children[1].remove();
+    }
+}
+
+function fillDropDown(ctl, ctlValue, dValue) {
+
+    var nLength = document.getElementById(ctl).length;
+
+    for (var i = 0 ; i < nLength; i++) {
+        document.getElementById(ctl).remove(0);
+    }
+
+    var obj;
+    obj = new Option();
+    obj.text = '<-Pick->';
+            obj.value = '0';
+            obj.selected = true;
+            document.getElementById(ctl).add(obj);
+
+            if (ctlValue != "") {
+                var arrList = ctlValue.split(';');
+                for (var i = 0; i < arrList.length - 1; i++) {
+                    var oOption = document.createElement("OPTION");
+                    arrListValues = arrList[i].split('|');
+                    oOption.value = arrListValues[0];
+                    oOption.text = arrListValues[1];
+                    if (dValue != "" && arrListValues[0] == dValue) {
+                        oOption.selected = true;
+                    }
+                    document.getElementById(ctl).add(oOption);
+                }
+            }
+        }
+
+        function fillDropDownCheckBox(ctl, ctlValue, dValue) {
+
+            ctl.ClearItems();
+            var dpValues = "";
+            if (ctlValue != '') {
+                var arrList = ctlValue.split(';');
+                for (var i = 0; i < arrList.length - 1; i++) {
+
+                    arrListValues = arrList[i].split('|');
+                    ctl.AddItem(arrListValues[1], arrListValues[0]);
+                    dpValues = dpValues + arrListValues[0] + ",";
+                }
+                dpValues = dpValues.substring(0, dpValues.length - 1);
+                document.getElementById('hdnMultipleFloor').value = dpValues;
+
+                if (dValue != "") {
+                    //var arrayOfIndices = new Array();
+
+                    //for (var i = 0; i < checkListBox.GetItemCount() ; i++) {
+                    //    var tt = checkListBox.GetItem(i).value;
+                    //    arrayOfIndices[0] = 0;
+                    //    if (tt.toLowerCase().indexOf('terminal_types.db') > -1) {
+                    //        arrayOfIndices[1] = i;
+                    //    }
+                    //}
+                    //checkListBox.UnselectIndices(arrayOfIndices);
+
+                    var SelectedIndexVals = dValue.split(',');
+                    ctl.SelectValues(SelectedIndexVals);
+
+                    //ctl.SelectIndices(dValue);
+
+                    //updateText();
+                }
+            }
+        }
+        function FillLookUpData(sControl, ViewCtl, sData) {
+
+            if (sControl == "CONTACT_ID") {
+
+                var ContactRowValues = sData.split(';');
+
+                if (String(ContactRowValues) != "undefined" && String(ContactRowValues) != "null") {
+
+                    for (var i = 0; i < ContactRowValues.length; i++) {
+                        if (ContactRowValues[i] == null)
+                            ContactRowValues[i] = "";
+                        else if (ContactRowValues[i] != null) {
+                            var sInd = ContactRowValues[i].indexOf('##');
+                            if (sInd != "-1") {
+                                ContactRowValues[i] = ContactRowValues[i].replace(/##/g, ' ');
+                            }
+                        }
+                    }
+                    ChangeContact(ContactRowValues[0], ContactRowValues[1], ContactRowValues[2], ContactRowValues[3], ContactRowValues[10], ContactRowValues[11], ContactRowValues[12], ContactRowValues[13], ContactRowValues[14], ContactRowValues[15]);
+                    ChangeCompany(ContactRowValues[4], ContactRowValues[5], ContactRowValues[6], ContactRowValues[7], ContactRowValues[8], ContactRowValues[9], false);
+
+                }
+            }
+            else if (sControl == "COMPANY_ID") {
+                var CompanyRowDetails = sData.split(';');
+
+                if (String(CompanyRowDetails) != "undefined" && String(CompanyRowDetails) != "null") {
+
+                    for (var i = 0; i < CompanyRowDetails.length; i++) {
+                        if (CompanyRowDetails[i] == null)
+                            CompanyRowDetails[i] = "";
+                        else if (CompanyRowDetails[i] != null) {
+                            var sInd = CompanyRowDetails[i].indexOf('##');
+                            if (sInd != "-1") {
+                                CompanyRowDetails[i] = CompanyRowDetails[i].replace(/##/g, ' ');
+                            }
+                        }
+                    }
+                    ChangeCompany(CompanyRowDetails[0], CompanyRowDetails[1], CompanyRowDetails[2], CompanyRowDetails[3], CompanyRowDetails[4], CompanyRowDetails[5], true);
+                }
+
+            }
+            else if (sControl == "TO_MEET_EMP_ID") {
+
+                var EmployeeRowDetails = sData.split(';');
+                if (String(EmployeeRowDetails) != "undefined" && String(EmployeeRowDetails) != "null") {
+
+                    for (var i = 0; i < EmployeeRowDetails.length; i++) {
+                        if (EmployeeRowDetails[i] == null)
+                            EmployeeRowDetails[i] = "";
+                        else if (EmployeeRowDetails[i] != null) {
+                            var sInd = EmployeeRowDetails[i].indexOf('##');
+                            if (sInd != "-1") {
+                                EmployeeRowDetails[i] = EmployeeRowDetails[i].replace(/##/g, ' ');
+                            }
+                        }
+                    }
+                    ChangeEmployees(EmployeeRowDetails[0], EmployeeRowDetails[1], EmployeeRowDetails[2], EmployeeRowDetails[3], EmployeeRowDetails[4], EmployeeRowDetails[5], EmployeeRowDetails[6], EmployeeRowDetails[7], EmployeeRowDetails[8], EmployeeRowDetails[9], EmployeeRowDetails[10], EmployeeRowDetails[11], EmployeeRowDetails[12]);
+                }
+            }
+            else if (sControl == "STATIC_TO_MEET_EMP_ID") {
+
+                var EmployeeRowDetails = sData.split(';');
+                if (String(EmployeeRowDetails) != "undefined" && String(EmployeeRowDetails) != "null") {
+
+                    for (var i = 0; i < EmployeeRowDetails.length; i++) {
+                        if (EmployeeRowDetails[i] == null)
+                            EmployeeRowDetails[i] = "";
+                        else if (EmployeeRowDetails[i] != null) {
+                            var sInd = EmployeeRowDetails[i].indexOf('##');
+                            if (sInd != "-1") {
+                                EmployeeRowDetails[i] = EmployeeRowDetails[i].replace(/##/g, ' ');
+                            }
+                        }
+                    }
+                    ChangeReportTo(EmployeeRowDetails[0], EmployeeRowDetails[1], EmployeeRowDetails[2], EmployeeRowDetails[3], EmployeeRowDetails[4], EmployeeRowDetails[5], EmployeeRowDetails[6], EmployeeRowDetails[7], EmployeeRowDetails[8], EmployeeRowDetails[9], EmployeeRowDetails[10], EmployeeRowDetails[11], EmployeeRowDetails[12]);
+                }
+            }
+            else if (sControl == "VEHICLE_ID") {
+                var ContactRowValues = sData.split(';');
+                if (String(ContactRowValues) != "undefined" && String(ContactRowValues) != "null") {
+                    for (var i = 0; i < ContactRowValues.length; i++) {
+                        if (ContactRowValues[i] == null)
+                            ContactRowValues[i] = "";
+                        else if (ContactRowValues[i] != null) {
+                            var sInd = ContactRowValues[i].indexOf('##');
+                            if (sInd != "-1") {
+                                ContactRowValues[i] = ContactRowValues[i].replace(/##/g, ' ');
+                            }
+                        }
+                    }
+                    ChangeVehicle(ContactRowValues[0], ContactRowValues[1], ContactRowValues[2], ContactRowValues[3], ContactRowValues[4], ContactRowValues[5]);
+                    //ChangeTransporter(ContactRowValues[6], ContactRowValues[7], ContactRowValues[8], ContactRowValues[9], ContactRowValues[10])
+                }
+            }
+            else if (sControl == "TRANSPORTER_ID") {
+                var ContactRowValues = sData.split(';');
+                if (String(ContactRowValues) != "undefined" && String(ContactRowValues) != "null") {
+                    for (var i = 0; i < ContactRowValues.length; i++) {
+                        if (ContactRowValues[i] == null)
+                            ContactRowValues[i] = "";
+                        else if (ContactRowValues[i] != null) {
+                            var sInd = ContactRowValues[i].indexOf('##');
+                            if (sInd != "-1") {
+                                ContactRowValues[i] = ContactRowValues[i].replace(/##/g, ' ');
+                            }
+                        }
+                    }
+                    ChangeTransporter(ContactRowValues[0], ContactRowValues[1], ContactRowValues[2], ContactRowValues[3], ContactRowValues[4]);
+                }
+            }
+            else if (sControl == "DRIVER_ID") {
+                var ContactRowValues = sData.split(';');
+                if (String(ContactRowValues) != "undefined" && String(ContactRowValues) != "null") {
+                    for (var i = 0; i < ContactRowValues.length; i++) {
+                        if (ContactRowValues[i] == null)
+                            ContactRowValues[i] = "";
+                        else if (ContactRowValues[i] != null) {
+                            var sInd = ContactRowValues[i].indexOf('##');
+                            if (sInd != "-1") {
+                                ContactRowValues[i] = ContactRowValues[i].replace(/##/g, ' ');
+                            }
+                        }
+                    }
+                    ChangeDriver(ContactRowValues[0], ContactRowValues[1], ContactRowValues[2], ContactRowValues[3], ContactRowValues[4]);
+                }
+            }
+            else if (sControl == "VENDOR_ID") {
+                var ContactRowValues = sData.split(';');
+                if (String(ContactRowValues) != "undefined" && String(ContactRowValues) != "null") {
+                    for (var i = 0; i < ContactRowValues.length; i++) {
+                        if (ContactRowValues[i] == null)
+                            ContactRowValues[i] = "";
+                        else if (ContactRowValues[i] != null) {
+                            var sInd = ContactRowValues[i].indexOf('##');
+                            if (sInd != "-1") {
+                                ContactRowValues[i] = ContactRowValues[i].replace(/##/g, ' ');
+                            }
+                        }
+                    }
+                    ChangeVendor(ContactRowValues[0], ContactRowValues[1], ContactRowValues[2], ContactRowValues[3], ContactRowValues[4], ContactRowValues[5], ContactRowValues[6]);
+                }
+            }
+            else if (sControl == "VEHICLE_OUT") {
+                var EmployeeRowDetails = sData.split(';');
+                if (String(EmployeeRowDetails) != "undefined" && String(EmployeeRowDetails) != "null") {
+                    for (var i = 0; i < EmployeeRowDetails.length; i++) {
+                        if (EmployeeRowDetails[i] == null)
+                            EmployeeRowDetails[i] = "";
+                    }
+                    ChangeVehicle(EmployeeRowDetails[0], EmployeeRowDetails[1], EmployeeRowDetails[2], EmployeeRowDetails[3], EmployeeRowDetails[4], EmployeeRowDetails[5], EmployeeRowDetails[6], EmployeeRowDetails[7], EmployeeRowDetails[8], EmployeeRowDetails[9], EmployeeRowDetails[10]);
+                }
+            }
+            else if (sControl == "REQUESTOR_ID") {
+
+                var EmployeeRowDetails = sData.split(';');
+                if (String(EmployeeRowDetails) != "undefined" && String(EmployeeRowDetails) != "null") {
+
+                    for (var i = 0; i < EmployeeRowDetails.length; i++) {
+                        if (EmployeeRowDetails[i] == null)
+                            EmployeeRowDetails[i] = "";
+                        else if (EmployeeRowDetails[i] != null) {
+                            var sInd = EmployeeRowDetails[i].indexOf('##');
+                            if (sInd != "-1") {
+                                EmployeeRowDetails[i] = EmployeeRowDetails[i].replace(/##/g, ' ');
+                            }
+                        }
+                    }
+                    FillRommRequestor(EmployeeRowDetails[0], EmployeeRowDetails[1], EmployeeRowDetails[2], EmployeeRowDetails[3], EmployeeRowDetails[4], EmployeeRowDetails[5], EmployeeRowDetails[6], EmployeeRowDetails[7], EmployeeRowDetails[8], EmployeeRowDetails[9], EmployeeRowDetails[10], EmployeeRowDetails[11], EmployeeRowDetails[12]);
+                }                
+            }
+            document.getElementById(ViewCtl).style.display = "none";
+        }
+        function clearText(id) {
+
+            var txtValue = document.getElementById(id).value;
+            var ViewCtl = id.concat("_divDPContenet");
+
+            if (txtValue.length == 0 || txtValue.length == 1) {
+                document.getElementById(ViewCtl).innerText = 'No Record found! ';
+                document.getElementById(ViewCtl).style.display = "block";
+            }
+            else {
+                document.getElementById(ViewCtl).style.display = "none";
+            }
+        }
+        function LoadData(id, event) {
+
+            var defText = "";
+            var strDependency = "";
+            var txtValue = document.getElementById(id).value;
+            var ViewCtl = id.concat("_divDPContenet");
+            var strProperties = document.getElementById(id).attributes.gCol.value;
+            var stCtlName = document.getElementById(id).attributes.ctlName.value;
+
+            if (event.keyCode === 13) {
+
+                if (txtValue.length == 0) {
+                    document.getElementById(ViewCtl).innerText = "No Records Found";
+                }
+                else {
+
+                    defText = InvokeAjaxMethodSync("GetLookupDetails", "ctlName=" + stCtlName + "&searchPara=" + txtValue + "&strDependency=" + strDependency + "&strProperties=" + strProperties + "&sViewCtl=" + ViewCtl);
+                    if (defText != "") {
+                        document.getElementById(ViewCtl).innerHTML = defText;
+                    }
+                    else {
+                        document.getElementById(ViewCtl).innerText = 'No Record found! ';
+                    }
+                }
+                document.getElementById(ViewCtl).style.display = "block";
+                return false;
+            }
+        }
+    </script>
+    <script>
+        function OnBlurControlChange(controlId, UdfField, text) {
+            var value = UdfField; // Assign The Required Udf here
+            var control = document.getElementById(controlId);
+            var selectedtxt = control.options[control.selectedIndex].text;
+            if (selectedtxt != 'undefined' || selectedtxt != '') {
+                if (selectedtxt.toString().toLowerCase() == 'others') {
+                    var div = document.createElement('DIV');
+                    var id = controlId.split('_');
+                    if (text != '' && text != undefined)
+                        document.getElementById('FOASMetaHeader_hdnOther_value').value = text;
+                    div.innerHTML = '<input id=' + id[0] + '_' + value + ' name=' + id[0] + '$' + value + ' type="text" value="' + document.getElementById('FOASMetaHeader_hdnOther_value').value + '" class="inputstyle" style="margin-top: 7px;width: 200px;" />';
+                    //}
+                    //else
+                    //    div.innerHTML = '<input id=' + id[0] + '_' + value + ' name=' + id[0] + '$' + value + ' type="text" class="inputstyle" style="margin-top: 7px;width: 200px;" />';
+                    control.parentElement.appendChild(div);
+                    document.getElementById('FOASMetaHeader_hdnothertxt').value += '|' + value;
+                }
+                else {
+                    control.parentElement.children[1].remove();
+                }
+            }
+        }
+        function controlsLoad() {
+            var ControlsList = document.querySelectorAll('[dataOthervalue]:not([dataOthervalue=""]');
+            var i = 0, cont_id = '';
+            while (ControlsList.length > i) {
+                cont_id += '|' + ControlsList[i].id;
+                i++;
+            }
+            document.getElementById('FOASMetaHeader_hdncontrolist').value = cont_id;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            controlsLoad();
+            var cid = document.getElementById('FOASMetaHeader_hdncontrolist').value.toString().split('|');
+            if (cid.length > 1) {
+                for (var i = 1; i < cid.length; i++) {
+                    var ddnPurpose = document.getElementById(cid[i]);
+                    if (ddnPurpose != null) {
+                        var value = ddnPurpose.getAttribute("dataOthervalue");
+                        var text = ddnPurpose.getAttribute("dataOthertext");
+                        if (text != null && text != undefined)
+                            OnBlurControlChange(cid[i], value, text);
+                        else
+                            OnBlurControlChange(cid[i], value, '');
+                    }
+                }
+            }
+            if (document.getElementById('hdnZoneName')) {
+                if (document.getElementById('hdnZoneName').value != '') {
+                    var name = document.getElementById('hdnZoneName').value;
+                    var id = document.getElementById('hdnZoneId').value;
+                    var div = document.createElement('DIV');
+                    div.innerHTML = '<span id="RoomType" class="text">' + name + '</span>';
+                    document.getElementById('ctlVisitorRegister_E_MEETING_ROOM').parentElement.appendChild(div);
+
+                    if (name == 'RedZone') {
+                        document.getElementById('RoomType').style.color = 'Red';
+                        document.getElementById('RoomType').style.fontWeight = 'bold'
+                        document.getElementById('RoomType').style.fontSize = '14';
+                        document.getElementById('RoomType').style.fontWeight = 'bold'
+                    }
+                    else if (name == 'GreenZone') {
+                        document.getElementById('RoomType').style.color = 'Green';
+                        document.getElementById('RoomType').style.fontWeight = 'bold'
+                        document.getElementById('RoomType').style.fontSize = '14';
+                        document.getElementById('RoomType').style.fontWeight = 'bold'
+                    }
+
+                }
+            }
+        }, true);
+    </script>
+</div>
+
+    <title>Scan your QR Code</title>
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
+     <link href="../inc/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../inc/bootstrap/css/bootbox.min.js"></script>
+    <script type="text/javascript" src="../inc/bootstrap/Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../inc/bootstrap/Scripts/jquery-3.3.7_bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../inc/bootstrap/css/style.css">
+
+
+
+
+
+<script type="text/javascript">
+ 
+        function ClearError()
+        {
+        document.getElementById('FOASAccessError_lblMsg').value = '';    
+        document.getElementById('FOASAccessError_tblError').style.display = 'none';
+
+        }
+    function showError(Errmsg) {
+        document.getElementById("FOASAccessError_lblMsg").innerHTML = Errmsg;
+        document.getElementById("FOASAccessError_tblError").style.display = "table";
+        window.scrollTo(0, 0);
+    }
+    $(document).keydown(function(e) { if (e.which == 27) { ClearError(); } });
+</script>
+
+<div style="position: fixed; left: 50%; width: 50%; z-index:999;">
+  <div style="position: relative; left:-50%;">
+    <table id="FOASAccessError_tblError" align="center" class="container1" cellpadding="0" cellspacing="0" width="100%" style="display:none">
+	<tbody><tr style="height: 25px;">
+		<td valign="top">
+                <table id="FOASAccessError_tblErrorMsg" align="center" class="float_err">
+			<tbody><tr>
+				<td valign="top" width="30px">
+                            <img id="FOASAccessError_imgStop" src="../inc/img/static/accesserror_ctl/logo_icon.png" style="height:50px;width:48px;border-width:0px;">
+                        </td>
+				<td id="FOASAccessError_td1" valign="middle" class="TP-text" align="left" style="min-width:225px; padding-left:10px;">
+                            <span id="FOASAccessError_lblMsg" style="display:inline-block;width:100%;"></span></td>
+				<td valign="top" width="30px" align="right">
+                            <img alt="CloseError" src="../inc/img/static/notification_ctl/Close-16.png" height="16" onclick="ClearError();" style="cursor: pointer" align="top" width="16">
+                        </td>
+			</tr>
+		</tbody></table>
+		
+            </td>
+	</tr>
+	<tr>
+	</tr>
+</tbody></table>
+
+    <table id="FOASAccessError_tblErrorFiller">
+	<tbody><tr>
+		<td>
+            </td>
+	</tr>
+</tbody></table>
+
+  </div>
+</div>
+
+    <div id="body_div" style="display:block">
+        <div class="container-fluid">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-default" style="background-color: #000000;height :70px ">
+                    <div class="pull-left">
+
+                    </div>
+                    <div class="pull-left" style="padding-top:25px">
+                        <span style="color:white;font-size:25px; padding-top:20px;margin-left:20px">Scan Your QR Code</span>
+                    </div>
+                </nav>
+                <div id="divlogo">
+                    <nav class="navbar navbar-default" style="background: url(img/pattern.jpg) repeat;height :90px ">
+
+                        <div class="pull-right">
+                            <img id="cus_logo" src="../inc/img/logo_customer_default.png" class="img-responsive" style="padding-top:20px;padding-left:20px;padding-right:20px;height:60px">
+                        </div>
+
+                        <div class="pull-left">
+                            <img src="../inc/img/logo_cogent.png" class="img-responsive" style="padding-top:20px;padding-right:10px;height:60px;width:180px">
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div>
+                <div class="container-fluid" style="margin-top:50px">
+                    <div id="qrcode_scan" class="text-center" style="display: block;">
+                        <p class="text-center">
+                        <span style="color:orangered;font-size:25px; padding-top:20px;margin-left:20px">Please scan your QR Code inside the view finder</span></p>
+                         <div style="margin-left:10%;margin-right:10%;margin-top:5%">
+
+                            <video muted="" playsinline="" id="qr-video" style="height:300px;border-style: solid; border-color: orangered"></video>
+                        </div>
+
+
+                        <!-- <div class="text-center">
+                            <img src="../inc/img/qr_code_animation.gif" style="padding-top:10px;padding-right:10px;height:200px;width:200px">
+                           
+                        </div> -->
+                        <span id="status" style="color:black;font-size:25px;">Scaning your code.</span>
+                    </div>
+
+                    <div id="qrcode_success" class="text-center" style="height: 300px; border-style: solid; border-color: orangered; display: none;margin-left:10%;margin-right:10%;margin-top:5%">
+
+                           
+                        <span id="status_block" style="color:black;font-size:25px;"></span>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <input name="hdnreqid" type="hidden" id="hdnreqid" value="4">
+     </div>
+
+    <script type="module">
+        import QrScanner from "../inc/scripts/qr-scanner.min.js";
+        QrScanner.WORKER_PATH = '../inc/scripts/qr-scanner-worker.min.js';
+
+        const video = document.getElementById('qr-video');
+        // const camHasCamera = document.getElementById('status');
+        const camQrResult = document.getElementById('status');
+        const scaning = document.getElementById('qrcode_scan');
+        const success = document.getElementById('qrcode_success');
+       
+        function setResult(label, result,scanner) {
+            label.textContent = result;
+            label.style.color = 'teal';
+            clearTimeout(label.highlightTimeout);
+            label.highlightTimeout = setTimeout(() => label.style.color = 'inherit', 100);
+
+             const qrdata = result.split('^')
+                        if (qrdata.length >= 2) {
+                           scaning.style.display = 'none';
+                           success.style.display = 'block';
+                           scanner.stop();
+                            getRegisterFields(qrdata[1]);
+                        }
+                        else {
+                            console.log("two");
+                        }
+        }
+
+
+         function getRegisterFields(room) {
+            var roomid = room ;
+            var reqid = document.getElementById("hdnreqid").value;
+            var ResponseText = InvokeAjaxMethodSync("MRMRoomCheckin", "reqid=" + reqid + "&roomid=" + roomid);
+
+            if (ResponseText != '') {
+
+                // document.getElementById("FOASAccessError_lblMsg").innerHTML = ResponseText;
+                 document.getElementById("  ").innerHTML = ResponseText;
+                document.getElementById("FOASAccessError_tblError").style.display = "table";
+                document.getElementById("txtqr").value = '';
+                document.getElementById("hdnreqid").value = '';
+
+            }
+            else {
+                
+                document.getElementById("status_block").innerHTML = ResponseText;
+                document.getElementById("txtqr").value = '';
+                document.getElementById("hdnreqid").value = '';
+            }
+        }
+
+
+        // ####### Web Cam Scanning #######
+
+        // QrScanner.hasCamera().then(hasCamera => camHasCamera.textContent = hasCamera);
+
+        const scanner = new QrScanner(video, result => setResult(camQrResult, result,scanner));
+        scanner.start();
+
+        document.getElementById('inversion-mode-select').addEventListener('change', event => {
+        scanner.setInversionMode(event.target.value);
+        });
+
+    </script>
+    <script type="text/javascript">
+        function codeOnLoad() {
+            var qrcodescan = document.getElementById('qrcode_scan');
+            var qrcodesuccess = document.getElementById('qrcode_success');
+            qrcodescan.style.display = 'block';
+            qrcodesuccess.style.display = 'none';
+        }
+        window.onload = codeOnLoad;
+    </script>
+
+
+
+
+</body></html>
