@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan your QR Code</title>
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
+     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="css/bootbox.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.7_bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="body_div" style="display:block">
+        <div class="container-fluid">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-default" style="background-color: #000000;height :70px ">
+                    <div class="pull-left">
+
+                    </div>
+                    <div class="pull-left" style="padding-top:25px">
+                        <span style="color:white;font-size:25px; padding-top:20px;margin-left:20px">Scan Your QR Code</span>
+                    </div>
+                </nav>
+                <div id="divlogo">
+                    <nav class="navbar navbar-default" style="background: url(img/pattern.jpg) repeat;height :90px ">
+
+                        <div class="pull-right">
+                            <img id="cus_logo" src="img/logo_customer_default.png" class="img-responsive" style="padding-top:20px;padding-left:20px;padding-right:20px;height:60px">
+                        </div>
+
+                        <div class="pull-left">
+                            <img src="img/logo_cogent.png" class="img-responsive" style="padding-top:20px;padding-right:10px;height:60px;width:180px">
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div>
+                <div class="container-fluid" style="margin-top:100px">
+
+                    
+
+                    <div  id ="qrcode_scan" class="text-center" >
+                         <div style="margin-left:10%;margin-right:10%;margin-top:5%" >
+                        <p class="text-center">
+                        <span style="color:orangered;font-size:25px; padding-top:20px;margin-left:20px">Please scan your QR code inside the view finder</span></p>
+                            <video muted playsinline id="qr-video"style="height:400px;border-style: solid; border-color: orangered"></video>
+                        </div>
+                        
+                        <div class="text-center">
+                            <img src="img/qr_code_animation.gif"style="padding-top:20px;padding-right:10px;height:200px;width:200px">
+                           
+                        </div>
+                        <span id="status" style="color:black;font-size:25px;">Scaning your code.</span>
+                    </div>
+
+                    <div  id ="qrcode_success" class="text-center" style="height:400px;border-style: solid; visibility:hidden;border-color: orangered">
+
+                            <div class="text-center">
+                            <img src="img/qr_code_animation.gif"style="padding-top:20px;padding-right:10px;height:200px;width:200px">
+                           
+                        </div>
+                        <span id="status" style="color:black;font-size:25px;">You have checked - in the room successfully! <br/> Happy Metting :)
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+     </div>
+
+    <script type="module">
+        import QrScanner from "../js/qr-scanner.min.js";
+        QrScanner.WORKER_PATH = '../js/qr-scanner-worker.min.js';
+
+        const video = document.getElementById('qr-video');
+        // const camHasCamera = document.getElementById('status');
+        const camQrResult = document.getElementById('status');
+        const scaning = document.getElementById('qrcode_scan');
+        const success = document.getElementById('qrcode_success');
+       
+        function setResult(label, result,scanner) {
+            label.textContent = result;
+            label.style.color = 'teal';
+            clearTimeout(label.highlightTimeout);
+            label.highlightTimeout = setTimeout(() => label.style.color = 'inherit', 100);
+
+
+                    getData(result);
+             // const qrdata = result.split('^')
+             //            if (qrdata.length >= 2) {
+                            
+             //               scaning.style.display = 'none';
+             //               success.style.display = 'block';
+             //               scanner.stop();
+             //                getRegisterFields();
+             //            }
+             //            else {
+             //                console.log("two");
+             //            }
+        }
+
+
+        function getData(result) {
+                console.log(result);
+        }
+
+
+
+         function codeOnLoad() {
+           var qrcodescan = document.getElementById('qrcode_scan');
+           var qrcodesuccess = document.getElementById('qrcode_success');
+          qrcodescan.style.display = 'block';
+          qrcodesuccess.style.display = 'none';
+        }
+        window.onload = codeOnLoad;
+
+        // ####### Web Cam Scanning #######
+
+        // QrScanner.hasCamera().then(hasCamera => camHasCamera.textContent = hasCamera);
+
+        const scanner = new QrScanner(video, result => setResult(camQrResult, result,scanner));
+        scanner.start();
+
+        document.getElementById('inversion-mode-select').addEventListener('change', event => {
+        scanner.setInversionMode(event.target.value);
+        });
+
+    </script>
+
+
+
+</body>
+</html>
